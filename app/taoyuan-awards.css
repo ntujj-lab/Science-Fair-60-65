@@ -198,6 +198,133 @@
   padding-bottom: 60px;
 }
 
+.usage-dashboard {
+  margin: 22px 0;
+  padding: 22px;
+  border: 1px solid #c9ddd8;
+  border-radius: 16px;
+  background: linear-gradient(135deg, #f1faf7 0%, #fffdf8 72%);
+}
+
+.usage-heading {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 18px;
+}
+
+.usage-heading h2,
+.usage-trend h3 {
+  margin: 0;
+}
+
+.usage-heading p:not(.eyebrow),
+.usage-trend span {
+  margin: 7px 0 0;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.admin-export {
+  flex: 0 0 auto;
+  padding: 10px 14px;
+  border-radius: 9px;
+  background: var(--green);
+  color: #fff;
+  font-size: 13px;
+  font-weight: 700;
+  text-decoration: none;
+  box-shadow: 0 6px 16px rgba(43, 104, 88, .18);
+}
+
+.admin-export:hover {
+  background: #205b4b;
+}
+
+.usage-metrics {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.usage-metrics article {
+  min-height: 80px;
+  padding: 14px;
+  border: 1px solid #dbe6e2;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, .72);
+}
+
+.usage-metrics strong {
+  display: block;
+  color: var(--green);
+  font-size: 25px;
+  line-height: 1.1;
+}
+
+.usage-metrics span {
+  display: block;
+  margin-top: 7px;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.4;
+}
+
+.usage-trend {
+  margin-top: 18px;
+  padding-top: 16px;
+  border-top: 1px solid #dce8e4;
+}
+
+.usage-trend > div:first-child {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 14px;
+}
+
+.usage-bars {
+  display: flex;
+  align-items: end;
+  min-height: 118px;
+  gap: 5px;
+  margin-top: 12px;
+  padding: 0 2px;
+}
+
+.usage-bars > div {
+  display: grid;
+  flex: 1 1 0;
+  min-width: 0;
+  height: 118px;
+  grid-template-rows: 1fr auto;
+  align-items: end;
+  gap: 5px;
+}
+
+.usage-bars i {
+  display: block;
+  min-height: 8px;
+  border-radius: 4px 4px 1px 1px;
+  background: linear-gradient(#78ad9b, var(--green));
+}
+
+.usage-bars small {
+  overflow: hidden;
+  color: #7a837d;
+  font-size: 10px;
+  text-align: center;
+  text-overflow: clip;
+  white-space: nowrap;
+}
+
+@media (max-width: 860px) {
+  .usage-metrics {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
 .admin-layout {
   display: grid;
   grid-template-columns: minmax(0, 1.05fr) minmax(360px, 0.95fr);
@@ -390,6 +517,15 @@
   .admin-heading,
   .admin-list article {
     flex-direction: column;
+  }
+
+  .usage-heading,
+  .usage-trend > div:first-child {
+    flex-direction: column;
+  }
+
+  .usage-metrics {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .fulltext-audit {
