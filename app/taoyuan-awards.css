@@ -59,6 +59,24 @@
   font-size: 12px;
 }
 
+.case-source {
+  display: inline-block;
+  margin-top: 8px;
+  color: var(--green);
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.title-guide-note {
+  margin: 0 0 16px;
+  padding: 10px 12px;
+  border-left: 3px solid var(--orange);
+  background: #f3eee2;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.7;
+}
+
 @media (max-width: 560px) {
   .site-credit {
     flex-direction: column;
