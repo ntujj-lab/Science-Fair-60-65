@@ -59,6 +59,15 @@
   font-size: 12px;
 }
 
+.admin-login {
+  margin-left: auto;
+  padding: 6px 10px;
+  border: 1px solid #c9d7d2;
+  border-radius: 999px;
+  background: #f7fbf9;
+  text-decoration: none;
+}
+
 .case-source {
   display: inline-block;
   margin-top: 8px;

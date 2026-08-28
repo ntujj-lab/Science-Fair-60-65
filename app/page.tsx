@@ -183,9 +183,12 @@ export default function Home() {
   const [analysisEdition,setAnalysisEdition]=useState<60|61|62|63|64|65>(60);
   const [selectedCase,setSelectedCase]=useState('030104');
   const [query,setQuery]=useState(''); const [edition,setEdition]=useState('全部'); const [subject,setSubject]=useState('全部'); const [phenomenon,setPhenomenon]=useState('全部');
+  const [adminAllowed,setAdminAllowed]=useState(false);
   const refreshPublishedContent=()=>void fetch('/api/content').then(response=>response.ok?response.json():{entries:[]}).then((data:{entries?:ManagedContent[]})=>setPublishedContent(data.entries||[])).catch(()=>setPublishedContent([]));
   const recordUsage=useCallback((eventType:UsageEventType,page:string)=>{trackFirebaseEvent('site_section_view',{section:page,legacy_event:eventType});void fetch('/api/usage',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({eventType,page})}).catch(()=>undefined);},[]);
   useEffect(()=>{refreshPublishedContent();},[]);
+  useEffect(()=>{let active=true;void fetch('/api/admin/session',{cache:'no-store'}).then(response=>response.ok?response.json():{allowed:false}).then((data:{allowed?:boolean})=>{if(active)setAdminAllowed(Boolean(data.allowed));}).catch(()=>{if(active)setAdminAllowed(false);});return()=>{active=false;};},[]);
+  useEffect(()=>{if(adminAllowed&&new URLSearchParams(window.location.search).get('admin')==='1')setTab('admin');},[adminAllowed]);
   useEffect(()=>{const eventByTab:Record<typeof tab,UsageEventType>={stats:'site_view',works:'works_view',patterns:'patterns_view',taoyuan:'taoyuan_view',about:'site_view',admin:'admin_open'};recordUsage(eventByTab[tab],tab);},[tab,recordUsage]);
   const scopeWorks=useMemo(()=>works.filter(w=>(edition==='全部'||w.edition===Number(edition))&&(subject==='全部'||w.subject===subject)),[edition,subject]);
   const distribution=useMemo(()=>Object.entries(scopeWorks.reduce<Record<string,number>>((a,w)=>{a[w.phenomenon]=(a[w.phenomenon]||0)+1;return a},{})).sort((a,b)=>b[1]-a[1]),[scopeWorks]);
@@ -214,8 +217,10 @@ export default function Home() {
   const subjectGradient=subjectDistribution.map(([name,count])=>{const start=phenomenonRunning/phenomenonWorks.length*100;phenomenonRunning+=count;return `${colors[name]} ${start}% ${phenomenonRunning/phenomenonWorks.length*100}%`}).join(',');
   const openPhenomenon=(name:string)=>{trackFirebaseEvent('phenomenon_open',{subject:statsSubject,phenomenon:name});setSubject(statsSubject);setPhenomenon(name);setEdition('全部');setQuery('');setTab('works')};
   const openSubjectAnalysis=()=>{const targetEdition=statsSubject==='生物科'?65:60;trackFirebaseEvent('research_case_open',{subject:statsSubject,edition:targetEdition,source:'stats'});setAnalysisEdition(targetEdition);setAnalysisSubject(statsSubject);setSelectedCase(detailedWorks.find(w=>w.subject===statsSubject&&w.edition===targetEdition)?.id||'');setTab('patterns')};
+  const navigationTabs:Array<[typeof tab,string]>=[['stats','統計首頁'],['works','作品查詢'],['patterns','研究架構'],['taoyuan','桃園十年表現'],['about','資料說明']];
+  if(adminAllowed)navigationTabs.push(['admin','內容後台']);
   return <main>
-    <header className="topbar"><div><span className="brand">科展脈絡</span><small>全國國中科展研究分析</small></div><nav className="tabs" aria-label="主要分頁">{([['stats','統計首頁'],['works','作品查詢'],['patterns','研究架構'],['taoyuan','桃園十年表現'],['about','資料說明'],['admin','內容後台']] as const).map(([id,label])=><button key={id} className={tab===id?'active':''} onClick={()=>setTab(id)}>{label}</button>)}</nav></header>
+    <header className="topbar"><div><span className="brand">科展脈絡</span><small>全國國中科展研究分析</small></div><nav className="tabs" aria-label="主要分頁">{navigationTabs.map(([id,label])=><button key={id} className={tab===id?'active':''} onClick={()=>setTab(id)}>{label}</button>)}</nav></header>
 
     {tab==='stats'&&<section className="page stats-page"><div className="intro"><div><p className="eyebrow">60–66 National Science Fair Atlas</p><h1>先看趨勢，再讀作品</h1><p>以現象與關鍵字重新整理得獎作品，快速掌握熱門研究方向與跨科規律。</p></div><button className="primary" onClick={()=>setTab('works')}>開始查詢作品 →</button></div>
       {siteNotice&&<aside className="site-notice"><div><p className="eyebrow">Site notice</p><h2>{siteNotice.title}</h2></div><p>{siteNotice.summary}</p></aside>}
@@ -245,6 +250,6 @@ export default function Home() {
 
     {tab==='about'&&<section className="page"><div className="page-heading"><div><p className="eyebrow">About the data</p><h1>資料範圍與判讀</h1></div></div><div className="about-grid"><article><h2>目前收錄</h2><p>第60–65屆全國國中科展各科前三名共201件；其中四科自然科104件，另納入第66屆地球科學前三名4件，共108件。</p></article><article><h2>三種證據層級</h2><p><b>題名架構導引</b>依官方得獎題名整理研究設計線索；<b>官方全文索引</b>以 PDF 正文建立摘要、章節與方法訊號查核；<b>人工全文分析</b>再深入拆解研究問題、變因、量測、證據鏈與限制。</p></article><article><h2>本次更新</h2><p>第61–64屆物理、化學、生物與地球科學前三名共70件，均已下載官方作品全文並建立索引（2,800頁、約162萬可擷取字元）。第60、65屆則保留28件人工全文分析。第66屆地球科學前三名已按官方大會獎名冊核實；分類若跨越多種現象，圓餅圖以主要研究現象計數，避免重複加總。</p></article><article className="designer-card"><h2>網頁設計</h2><p><b>廖俊傑</b><br/>桃園市自然輔導團兼任輔導員<br/><a href="mailto:ntujj@ms.tyc.edu.tw">ntujj@ms.tyc.edu.tw</a></p></article></div></section>}
     {tab==='admin'&&<ContentAdmin sourceWorks={works} onPublishedChanged={refreshPublishedContent}/>}
-    <footer className="site-credit"><span>網頁設計：桃園市自然輔導團兼任輔導員 廖俊傑</span><a href="mailto:ntujj@ms.tyc.edu.tw">ntujj@ms.tyc.edu.tw</a></footer>
+    <footer className="site-credit"><span>網頁設計：桃園市自然輔導團兼任輔導員 廖俊傑</span><a href="mailto:ntujj@ms.tyc.edu.tw">ntujj@ms.tyc.edu.tw</a>{!adminAllowed&&<a className="admin-login" href="/signin-with-chatgpt?return_to=%2F%3Fadmin%3D1">管理帳號登入</a>}</footer>
   </main>
 }
