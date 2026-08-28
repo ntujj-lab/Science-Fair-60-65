@@ -1246,5 +1246,53 @@
     "official_list_url": "https://twsf.ntsec.gov.tw/activity/race-1/65/high.html",
     "pdf_url": "https://twsf.ntsec.gov.tw/activity/race-1/65/pdf/NPHSF2025-030507.pdf",
     "local_pdf": "data/pdf/65/earth_science/030507.pdf"
+  },
+  {
+    "edition": 66,
+    "subject": "地球科學科",
+    "subject_slug": "earth_science",
+    "award": "第一名",
+    "work_id": "030508",
+    "title": "碳跡蚵循－以廢棄牡蠣殼建構金紙碳氣二級碳循環與捕捉系統",
+    "school": "彰化縣立原斗國民中小學",
+    "official_list_url": "https://twsf.ntsec.gov.tw/News-Content.aspx?lang=1&nid=1504&p=1&title=",
+    "pdf_url": "https://twsf.ntsec.gov.tw/FileAtt.ashx?fcode=C370D2F8BA9106927E039B2354E1B9DA&lang=1",
+    "local_pdf": "data/pdf/66/earth_science/030508.pdf"
+  },
+  {
+    "edition": 66,
+    "subject": "地球科學科",
+    "subject_slug": "earth_science",
+    "award": "第二名",
+    "work_id": "030503",
+    "title": "堰塞湖不同土石粒徑組成之穩定性及溢、潰壩沉積區域差異性之探討",
+    "school": "高雄市立五福國民中學",
+    "official_list_url": "https://twsf.ntsec.gov.tw/News-Content.aspx?lang=1&nid=1504&p=1&title=",
+    "pdf_url": "https://twsf.ntsec.gov.tw/FileAtt.ashx?fcode=C370D2F8BA9106927E039B2354E1B9DA&lang=1",
+    "local_pdf": "data/pdf/66/earth_science/030503.pdf"
+  },
+  {
+    "edition": 66,
+    "subject": "地球科學科",
+    "subject_slug": "earth_science",
+    "award": "第三名",
+    "work_id": "030506",
+    "title": "針穿聚霧－探究形狀針狀葉捕捉效能與水霧相關性質，並用於捕霧水鐘建構",
+    "school": "新北市立安溪國民中學",
+    "official_list_url": "https://twsf.ntsec.gov.tw/News-Content.aspx?lang=1&nid=1504&p=1&title=",
+    "pdf_url": "https://twsf.ntsec.gov.tw/FileAtt.ashx?fcode=C370D2F8BA9106927E039B2354E1B9DA&lang=1",
+    "local_pdf": "data/pdf/66/earth_science/030506.pdf"
+  },
+  {
+    "edition": 66,
+    "subject": "地球科學科",
+    "subject_slug": "earth_science",
+    "award": "第三名",
+    "work_id": "030507",
+    "title": "「埤」極泰來：探討桃園不同地景下影響埤塘冷島效應之因素",
+    "school": "桃園市立大成國民中學",
+    "official_list_url": "https://twsf.ntsec.gov.tw/News-Content.aspx?lang=1&nid=1504&p=1&title=",
+    "pdf_url": "https://twsf.ntsec.gov.tw/FileAtt.ashx?fcode=C370D2F8BA9106927E039B2354E1B9DA&lang=1",
+    "local_pdf": "data/pdf/66/earth_science/030507.pdf"
   }
 ]
