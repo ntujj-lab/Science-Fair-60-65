@@ -320,6 +320,42 @@
   white-space: nowrap;
 }
 
+.firebase-status {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin: 14px 0 18px;
+  padding: 13px 15px;
+  border: 1px solid #c9ddd4;
+  border-radius: 10px;
+  background: #f1f8f4;
+}
+
+.firebase-status div {
+  display: grid;
+  gap: 3px;
+}
+
+.firebase-status b {
+  color: #23634f;
+  font-size: 13px;
+}
+
+.firebase-status span {
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.firebase-status a {
+  flex: 0 0 auto;
+  color: var(--green);
+  font-size: 12px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
 @media (max-width: 860px) {
   .usage-metrics {
     grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -522,6 +558,11 @@
 
   .usage-heading,
   .usage-trend > div:first-child {
+    flex-direction: column;
+  }
+
+  .firebase-status {
+    align-items: flex-start;
     flex-direction: column;
   }
 

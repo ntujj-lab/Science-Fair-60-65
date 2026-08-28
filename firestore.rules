@@ -1,0 +1,41 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Anonymous event archive: only a valid, newly created event may be written.
+    // Reads and every kind of modification stay closed to public visitors.
+    match /usage_events/{eventId} {
+      allow create: if request.resource.data.keys().hasOnly([
+        'eventType', 'page', 'subject', 'edition', 'resultBucket',
+        'queryMode', 'knownKeyword', 'createdAt', 'schemaVersion'
+      ])
+      && request.resource.data.keys().hasAll([
+        'eventType', 'page', 'subject', 'edition', 'resultBucket',
+        'queryMode', 'knownKeyword', 'createdAt', 'schemaVersion'
+      ])
+      && request.resource.data.eventType in [
+        'site_section_view', 'works_search', 'phenomenon_open',
+        'research_case_open', 'report_export'
+      ]
+      && request.resource.data.page is string
+      && request.resource.data.page.size() <= 32
+      && request.resource.data.subject is string
+      && request.resource.data.subject.size() <= 20
+      && request.resource.data.edition is int
+      && request.resource.data.resultBucket is string
+      && request.resource.data.resultBucket.size() <= 16
+      && request.resource.data.queryMode is string
+      && request.resource.data.queryMode.size() <= 16
+      && request.resource.data.knownKeyword is string
+      && request.resource.data.knownKeyword.size() <= 40
+      && request.resource.data.schemaVersion == 1
+      && request.resource.data.createdAt == request.time;
+
+      allow read, update, delete: if false;
+    }
+
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}
