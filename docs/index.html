@@ -9,21 +9,10 @@
       :root { color-scheme: light; font-family: "Noto Sans TC", "Microsoft JhengHei", sans-serif; color: #183b4d; background: #f5f7f3; }
       * { box-sizing: border-box; }
       body { margin: 0; min-width: 320px; }
-      .share-bar { display: flex; align-items: center; min-height: 52px; padding: 9px clamp(16px, 4vw, 42px); border-bottom: 1px solid #dce6df; background: #ffffff; }
-      .identity { display: grid; gap: 2px; }
-      .identity strong { color: #205b4b; font-size: 16px; letter-spacing: .06em; }
-      .identity span { color: #66746f; font-size: 12px; }
-      .app-frame { display: block; width: 100%; height: calc(100vh - 52px); min-height: 650px; border: 0; background: #f5f7f3; }
-      @media (max-width: 560px) { .share-bar { align-items: flex-start; flex-direction: column; gap: 8px; } .app-frame { height: calc(100vh - 92px); } }
+      .app-frame { display: block; width: 100%; height: 100vh; min-height: 650px; border: 0; background: #f5f7f3; }
     </style>
   </head>
   <body>
-    <header class="share-bar">
-      <div class="identity">
-        <strong>科展脈絡</strong>
-        <span>全國國中科展研究分析・GitHub Pages 分享版</span>
-      </div>
-    </header>
     <iframe class="app-frame" title="科展脈絡｜全國國中科展研究分析" src="https://science-fair-atlas-60-66.ntujj.chatgpt.site/" allow="clipboard-read; clipboard-write"></iframe>
   </body>
 </html>
