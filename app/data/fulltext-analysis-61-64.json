@@ -1,0 +1,1405 @@
+{
+  "source": "國立臺灣科學教育館全國中小學科學展覽會第61–64屆國中組作品全文 PDF",
+  "method": "以 PDF 正文擷取建立索引；章節定位採標題比對，未定位不表示原文未含該內容。",
+  "records": [
+    {
+      "edition": 61,
+      "subject": "化學科",
+      "id": "030201",
+      "pageCount": 45,
+      "textCharacters": 21119,
+      "sourceUrl": "https://twsf.ntsec.gov.tw/activity/race-1/61/pdf/NPHSF2021-030201.pdf",
+      "sectionChecks": {
+        "摘要": true,
+        "方法": true,
+        "結果": true,
+        "結論": false
+      },
+      "abstractExcerpt": "我們將染布前處理後，墨水樹心染材經煮染及上色時間越久染色效果越佳；染液呈紅 色，略呈酸性，加鹼呈紫色、加酸呈黃色，但染布在空氣中置放，漸回復紅棕色。 我們也發現，加入不同含金屬離子的媒染劑會改變染液的顏色，而且前媒染比後媒染 的顯色效果佳；後媒染則比同媒染的顯色效果佳。 最後，我們開發出整合手機 App辨色的第二代在暗箱光路徑區中測比色槽染液的 RGB、染布使用 GY-33顏色感測器模組量測，可增加顏色量測的準確度。另外，也終於成 功的製造出第四代可調變色…",
+      "conclusionExcerpt": "",
+      "methodSignals": [
+        "量化量測"
+      ]
+    },
+    {
+      "edition": 61,
+      "subject": "化學科",
+      "id": "030208",
+      "pageCount": 42,
+      "textCharacters": 18173,
+      "sourceUrl": "https://twsf.ntsec.gov.tw/activity/race-1/61/pdf/NPHSF2021-030208.pdf",
+      "sectionChecks": {
+        "摘要": true,
+        "方法": true,
+        "結果": true,
+        "結論": true
+      },
+      "abstractExcerpt": "本研究秉持綠色化學之精神自製反應槽，並探討電解硫酸鋅溶液之研究。實驗就電極距 -3 -2 離(1.0 ~ 2.0 cm)、施加電壓(9 ~ 21V)、溶液濃度(110M~110M)、不同正極材料和不同金屬 2＋ 2＋ ＋ 2＋ 溶液(分別包含 Zn 、Sn、Ag 、Co )進行討論。 當電解硫酸鋅溶液且鋅為正極時，電極距離之倒數和鋅金屬生長速率呈正比。當施加較 大電壓時，鋅金屬生長速率有越快的趨勢，電解溶液濃度和在 45秒內析出鋅金屬量成正比， 也和鋅…",
+      "conclusionExcerpt": "本實驗主要設計一個簡易且可重複使用的反應槽，電解使用此裝置只需較低濃度硫酸鋅 溶液(110-3 M~110-2 M)，電解可析出兩種金屬(鋅和銅)，若調整硫酸鋅溶液濃度，也可調整 銅金屬析出位置，當以其他金屬溶液替代硫酸鋅溶液時，亦有相似結果。本研究整理如下：",
+      "methodSignals": [
+        "現地觀察",
+        "重複驗證"
+      ]
+    },
+    {
+      "edition": 61,
+      "subject": "化學科",
+      "id": "030210",
+      "pageCount": 36,
+      "textCharacters": 12522,
+      "sourceUrl": "https://twsf.ntsec.gov.tw/activity/race-1/61/pdf/NPHSF2021-030210.pdf",
+      "sectionChecks": {
+        "摘要": true,
+        "方法": true,
+        "結果": false,
+        "結論": false
+      },
+      "abstractExcerpt": "微生物燃料電池的陽極是用酵母菌在混有石墨粉的低筋麵粉或糯米中培養，數天後，加水 覆蓋，當底部成為缺氧狀態時就完成了。我們發現培養酵母菌的營養物質的重量、培養的時 間或石墨粉的純度、質量、顆粒大小等，都會影響陽極氧化電位的高低。 用兩層玻璃紙包著石墨棒和 98%的石墨粉做為陰極，不需通入空氣，就可以維持很高的還 原電位。通入空氣之後，還原電位會增加。陰極泡水 4天後，可以去除石墨粉中影響電壓的 物質，提高還原電位。 以糯米製作出來的微生物電池最大電壓 0.4…",
+      "conclusionExcerpt": "",
+      "methodSignals": [
+        "量化量測",
+        "機制推論"
+      ]
+    },
+    {
+      "edition": 61,
+      "subject": "化學科",
+      "id": "030211",
+      "pageCount": 47,
+      "textCharacters": 32819,
+      "sourceUrl": "https://twsf.ntsec.gov.tw/activity/race-1/61/pdf/NPHSF2021-030211.pdf",
+      "sectionChecks": {
+        "摘要": true,
+        "方法": false,
+        "結果": false,
+        "結論": false
+      },
+      "abstractExcerpt": "將廢棄物轉質為吸附材是當今趨勢。本研究建立具再現性之碳化程序，將花生菱殼、雞骨龍蝦 等製成生物炭，並建立吸附SOP來探討最佳處理參數，最後將其製成回收式生物炭球。 實驗發現動物炭因為含有高比例無機物(97%)，可經由酸洗提升生物炭的等重吸附率，雞骨炭 因無機物分布位置特殊而具有發展潛力(超越市售活性炭)。整體而言，酸洗能有效提升生物炭吸附 亞甲藍(99%)、動物炭吸附甲基橙(39%)能力(活性炭吸附亞甲藍70%、甲基橙 2%)，生物炭還能夠吸 附鈷離子…",
+      "conclusionExcerpt": "",
+      "methodSignals": [
+        "重複驗證"
+      ]
+    },
+    {
+      "edition": 61,
+      "subject": "地球科學科",
+      "id": "030502",
+      "pageCount": 48,
+      "textCharacters": 19457,
+      "sourceUrl": "https://twsf.ntsec.gov.tw/activity/race-1/61/pdf/NPHSF2021-030502.pdf",
+      "sectionChecks": {
+        "摘要": true,
+        "方法": false,
+        "結果": false,
+        "結論": false
+      },
+      "abstractExcerpt": "為了分析颱風是否受到台灣地形影響而改變風場，本研究分析近 20年間 29個西行颱風， 以全台 20個測站風向資料，繪製流型圖，將颱風在不同位置時的環流特徵進行分類，也製作 氣流裝置搭配保麗龍沙模擬各種流型。我們一共分出 12種颱風流型，選擇路徑 1~5號西行颱 風進行流型分析，颱風離台灣較遠時（123.5∘E），有尾流區或背風渦旋產生；離台灣較近時 （122∘E），不同位置有顯著的流型差異；過山後（120∘E），在其餘位置也都有地形效應； 1號路徑颱風，氣…",
+      "conclusionExcerpt": "",
+      "methodSignals": [
+        "模型／模擬",
+        "現地觀察",
+        "機制推論"
+      ]
+    },
+    {
+      "edition": 61,
+      "subject": "地球科學科",
+      "id": "030506",
+      "pageCount": 45,
+      "textCharacters": 32551,
+      "sourceUrl": "https://twsf.ntsec.gov.tw/activity/race-1/61/pdf/NPHSF2021-030506.pdf",
+      "sectionChecks": {
+        "摘要": true,
+        "方法": false,
+        "結果": false,
+        "結論": false
+      },
+      "abstractExcerpt": "基於對鄉土關懷，我們選定生命之河~萬年溪，此為唯一通過屏東市商業區、生態公園和 住宅區等之特殊溪流，利用傅立葉轉換紅外線光譜儀，調查溪流中塑膠微粒種類和含量，並 透過TGOS系統探究人口數與塑膠微粒之相關性發現：廣東橋流域塑膠微粒量最高，推論位於 『住宅區』之民生排放汙水有關；長春橋流域濃度次之，與位於『商業區』有直接關係。環 境指標生物~大型水蚤濾食中會攝入塑膠微粒，相較於控制組、塑膠微粒汙染下會明顯降低水 蚤活動力、心跳數；且繁殖力驟減，有顯著性差異…",
+      "conclusionExcerpt": "",
+      "methodSignals": [
+        "對照比較",
+        "現地觀察",
+        "機制推論"
+      ]
+    },
+    {
+      "edition": 61,
+      "subject": "地球科學科",
+      "id": "030507",
+      "pageCount": 41,
+      "textCharacters": 21132,
+      "sourceUrl": "https://twsf.ntsec.gov.tw/activity/race-1/61/pdf/NPHSF2021-030507.pdf",
+      "sectionChecks": {
+        "摘要": false,
+        "方法": false,
+        "結果": true,
+        "結論": false
+      },
+      "abstractExcerpt": "",
+      "conclusionExcerpt": "",
+      "methodSignals": [
+        "量化量測",
+        "模型／模擬",
+        "現地觀察",
+        "機制推論"
+      ]
+    },
+    {
+      "edition": 61,
+      "subject": "地球科學科",
+      "id": "030508",
+      "pageCount": 44,
+      "textCharacters": 13391,
+      "sourceUrl": "https://twsf.ntsec.gov.tw/activity/race-1/61/pdf/NPHSF2021-030508.pdf",
+      "sectionChecks": {
+        "摘要": true,
+        "方法": false,
+        "結果": true,
+        "結論": false
+      },
+      "abstractExcerpt": "本篇研究隔震裝置及搭配不同消能元件之探討。實驗得知，安裝隔震裝置可有效隔震; 單層隔震裝置擺動方向與地震力方向相同有較佳隔震效果，角度加大隔震效果變差，也許可 透過疊三層，各層夾 120度之擺放模式解決地震力方向問題。建物高寬比大晃動明顯，蓋建 物應考量隔震器承載重量與建物擺動力矩的極限；不同擺長隔震裝置有不同自然頻率;組合 擺之自然頻率較單長擺低，且最大加速度較低但頻寬較寬；隔震裝置並非越多層越好，多層 可能造成重心偏高晃動加劇；隔震層於底部隔震效果最佳…",
+      "conclusionExcerpt": "",
+      "methodSignals": [
+        "對照比較",
+        "量化量測",
+        "模型／模擬",
+        "現地觀察",
+        "重複驗證",
+        "機制推論"
+      ]
+    },
+    {
+      "edition": 61,
+      "subject": "物理科",
+      "id": "030103",
+      "pageCount": 47,
+      "textCharacters": 21372,
+      "sourceUrl": "https://twsf.ntsec.gov.tw/activity/race-1/61/pdf/NPHSF2021-030103.pdf",
+      "sectionChecks": {
+        "摘要": true,
+        "方法": true,
+        "結果": true,
+        "結論": true
+      },
+      "abstractExcerpt": "我們發現了一段離奇的新聞:貨車上的保麗龍箱在快速道路上掉落後，竟反彈回車上， 究竟是什麼力量造成的呢 ?實驗發現，當小貨車行駛時，後端因為形狀而產生卡門渦街，當 靠近後斗口中間的渦街把空氣帶入後斗口內，就會造成一個往內的吸力。且隨著速度變快， 吸力也逐漸增強(約可增加 1.2-2倍)。我們經過不斷測試，發現風洞兩側鑽洞後，會在後斗口 除卡門渦街外，另外造成一個上進下出的氣流，所以最後成功的還原出當時比中獎機率還低 的新聞畫面。我們也研究這個吸力是否能成為車…",
+      "conclusionExcerpt": "本研究希望可以知道無門小貨車的後斗，在高速行駛下，能否有吸力產生？這個吸力是 否可以變成前進的助力？能否重現比中獎機率還低的彈回新聞畫面？ 經由實驗得知，在高速行駛下，因為貨車形狀的關係，在後端會形成卡門渦街，左側渦 街逆時針旋轉，右側渦街順時針旋轉，而左側渦街較靠近後斗口，因此會在後斗口中間處造 成一個向內的氣流，並產生吸力。另外當風洞兩側鑽洞後，後斗口上…",
+      "methodSignals": [
+        "模型／模擬",
+        "現地觀察",
+        "機制推論"
+      ]
+    },
+    {
+      "edition": 61,
+      "subject": "物理科",
+      "id": "030104",
+      "pageCount": 45,
+      "textCharacters": 20173,
+      "sourceUrl": "https://twsf.ntsec.gov.tw/activity/race-1/61/pdf/NPHSF2021-030104.pdf",
+      "sectionChecks": {
+        "摘要": true,
+        "方法": true,
+        "結果": false,
+        "結論": true
+      },
+      "abstractExcerpt": "用 tracker追蹤身體定點運動數據，探索研究模式！ 取扣片坐姿， 選擇 Y 軸速率加速度，確立分析基準。踩踏 Y軸端點加速 度在此只是速度參數，代表此點之前半圈施力力矩的盈餘。調整車身遠離標準坐姿，發現固 定轉速加速度偏大，代表一圈內有快慢，圈內升速需更用力。此外，我們用模型推出坐墊位 置的調整方案，並找出身體角度影響施力的相關性。 測功率算踩踏力量，發現一圈內快慢加速影響功率數據波動大，可以用回歸 判別合理數據。高轉速高功率，發現力量增幅並不大；大齒…",
+      "conclusionExcerpt": "第一部分：標準比較數據確立 (一)比較各標點數據，我們選擇坐姿的 A 點扣片 Y軸軌跡數據進行整篇研究判讀。 再從身體調整， 選擇 60rpm、平把、阻力 4，作為標準坐姿，Y 軸速率、加速度比較值 2",
+      "methodSignals": [
+        "對照比較",
+        "量化量測",
+        "模型／模擬",
+        "機制推論"
+      ]
+    },
+    {
+      "edition": 61,
+      "subject": "物理科",
+      "id": "030107",
+      "pageCount": 45,
+      "textCharacters": 24191,
+      "sourceUrl": "https://twsf.ntsec.gov.tw/activity/race-1/61/pdf/NPHSF2021-030107.pdf",
+      "sectionChecks": {
+        "摘要": true,
+        "方法": true,
+        "結果": false,
+        "結論": false
+      },
+      "abstractExcerpt": "本實驗目的在探討彈性棒狀體受剪應力的效果。觀察碳纖維棒在水平放置時，給予剪應 力作用所產生的變形及振動。我們發現碳纖維棒在截面積大、長度短、受剪應力較大時，會 產生較大的剪力彈性係數。此外在碳纖維棒長度越長時，週期及振幅越大。剪應力越大時， 週期不變且振幅變大。向下角度越大時，週期不變且振幅變小。無論何種情形下，左右振幅 皆大於上下振幅。當擺動物體重心遠離受力點且受力與碳纖維振動方向相反時會產生共振效 果。而擺動物體重心靠近受力點且受力與碳纖維振動方向相同…",
+      "conclusionExcerpt": "",
+      "methodSignals": [
+        "現地觀察",
+        "機制推論"
+      ]
+    },
+    {
+      "edition": 61,
+      "subject": "物理科",
+      "id": "030112",
+      "pageCount": 41,
+      "textCharacters": 16016,
+      "sourceUrl": "https://twsf.ntsec.gov.tw/activity/race-1/61/pdf/NPHSF2021-030112.pdf",
+      "sectionChecks": {
+        "摘要": true,
+        "方法": true,
+        "結果": true,
+        "結論": true
+      },
+      "abstractExcerpt": "反泡泡是由一層空氣包裹著液體的泡泡，存在於液體之中，由於有不同於一般空氣泡泡 的結構與運動行為，反泡泡的現象吸引了不少人對它進行研究，然而卻鮮少有人對反泡泡的 空氣層厚度進行準確的測量。在這個研究中，我們提出一種測量方式，利用影像追蹤軟體 Tracker對反泡泡在水中的運動軌跡進行記錄，並根據阿基米德原理，獲得空氣層在反泡泡 中佔據的體積百分比。另一方面，由影片分析比較反泡泡破滅前後的影像，也可以測量估計 空氣層包裹的液體大小與空氣層的體積百分比。比較兩種…",
+      "conclusionExcerpt": "與未來展望 在這個研究中，我們試圖了解反泡泡的幾個基本物理問題，包括：反泡泡空氣層的厚 度，氣體佔據反泡泡的體積百分比，反泡泡在水中的運動軌跡，垂直方向的運動速度與加速 度等，並且比較不同濃度的反泡泡之差異。我們提出兩種測量反泡泡空氣層體積百分比的方 法，分別是「影像追蹤法」與「泡泡破滅瞬時影像法」，並與先前研究者所採用的「照相 法」進行了比較。我們將結論重…",
+      "methodSignals": [
+        "對照比較",
+        "量化量測",
+        "機制推論"
+      ]
+    },
+    {
+      "edition": 61,
+      "subject": "物理科",
+      "id": "030113",
+      "pageCount": 45,
+      "textCharacters": 15656,
+      "sourceUrl": "https://twsf.ntsec.gov.tw/activity/race-1/61/pdf/NPHSF2021-030113.pdf",
+      "sectionChecks": {
+        "摘要": true,
+        "方法": true,
+        "結果": false,
+        "結論": true
+      },
+      "abstractExcerpt": "水池邊，看到石雕魚噴出的水柱，水面變得凹凸不平，分析文獻後，發現都沒有解釋原 因的相關研究，決定深入探討。實驗發現，雙水柱所形成的水結依序為水平面、鉛直面…的 呈現。我們研究顯示，因為表面張力的緣故，雙水柱會以麻花狀互相纏繞，並在水平面及鉛 直面水結交接處，水柱會快速旋轉 90度，使水結翻轉，因此會形成數個水平面及鉛直面水 結，最後才結合成一道水柱。也發現，使水結振幅變大的因素為：雙水柱距離變大、水溶液 的表面張力變小。讓水結波長變長的因素為：雙水柱距離變…",
+      "conclusionExcerpt": "孔洞距離 孔洞大小 孔洞連心線角度 水平夾角 水位高度 表面張力 ↑ ↑ ↑ ↑ ↑ ↑ 水結的 ↑ ↑ 不變 不變 ↓ 振幅 水結的 ↑ ↑ 水平或 ↑ ↓ 波長 鉛直時最大 水結 ↓ ↓ 鉛直時最小 ↓ ↓ ↑ 數量 參考文獻",
+      "methodSignals": []
+    },
+    {
+      "edition": 61,
+      "subject": "生物科",
+      "id": "030305",
+      "pageCount": 43,
+      "textCharacters": 24020,
+      "sourceUrl": "https://twsf.ntsec.gov.tw/activity/race-1/61/pdf/NPHSF2021-030305.pdf",
+      "sectionChecks": {
+        "摘要": true,
+        "方法": false,
+        "結果": false,
+        "結論": true
+      },
+      "abstractExcerpt": "前人研究證實電擊與同性競爭會造成螯蝦焦慮，不過這些研究沒有考量蛻殼週期的干擾， 異性互動的研究也少見，因此本研究將探討蛻殼與異性互動對螯蝦互動行為與類焦慮行為的 影響。我們以互動缸來觀察公、母螯蝦的互動行為，透過十字迷宮進行類焦慮行為評估，再 以X 光拍攝胃石判讀蛻殼週期。結果顯示，蛻殼期與間期的公、母螯蝦有不同的互動行為， 蛻殼蝦和異性互動總量低，且有互動之蛻殼蝦所誘發的類焦慮行為較為明顯，顯示蛻殼與與 互動都會造成螯蝦焦慮。螯蝦體型會影響拒絕行為，大螯…",
+      "conclusionExcerpt": "與未來展望 本研究證實蛻殼期與蛻殼間期的公、母螯蝦會有不同的互動行為，蛻殼蝦較不願意和異 性互動，且後續誘發的類焦慮行為也較無互動組別明顯。顯示除了蛻殼激素誘發的內生性焦 慮外，外在刺激-社交互動亦可能透過神經系統而誘發螯蝦類焦慮行為。間期螯蝦與不同體 型異性互動行為亦有差異，但似乎不影響其在後續十字迷宮所展現的類焦慮行為。此外，大 公蝦與小母蝦互動較容易交…",
+      "methodSignals": [
+        "現地觀察",
+        "機制推論"
+      ]
+    },
+    {
+      "edition": 61,
+      "subject": "生物科",
+      "id": "030307",
+      "pageCount": 45,
+      "textCharacters": 20754,
+      "sourceUrl": "https://twsf.ntsec.gov.tw/activity/race-1/61/pdf/NPHSF2021-030307.pdf",
+      "sectionChecks": {
+        "摘要": true,
+        "方法": true,
+        "結果": false,
+        "結論": true
+      },
+      "abstractExcerpt": "諸羅樹蛙（Zhangixalus arvalis）屬於樹蛙科（Rhacophoridae）為台灣特有種青蛙。研究者 調查發現，在嘉義市頂庄里及新店里共有九處諸羅樹蛙的棲息地。在 2020年3月至 2021年 4月間，於新店里農場進行的研究顯示：諸羅樹蛙共有五種叫聲，為整夜鳴叫的青蛙，在當日 晚上7 時至8 時之間出現高峰，而過了翌日凌晨 1時，鳴叫時間長度有再次上升的趨勢，凌 晨3時之後才下降。相對濕度、水池水位高度、是否下雨以及氣溫都是影響諸羅樹蛙各種鳴…",
+      "conclusionExcerpt": "本研究根據統計報告分析，整合下述結論：",
+      "methodSignals": [
+        "量化量測",
+        "現地觀察",
+        "機制推論"
+      ]
+    },
+    {
+      "edition": 61,
+      "subject": "生物科",
+      "id": "030312",
+      "pageCount": 47,
+      "textCharacters": 27535,
+      "sourceUrl": "https://twsf.ntsec.gov.tw/activity/race-1/61/pdf/NPHSF2021-030312.pdf",
+      "sectionChecks": {
+        "摘要": true,
+        "方法": false,
+        "結果": false,
+        "結論": false
+      },
+      "abstractExcerpt": "研究首度發現果莢兩種捲法，是因果皮的三種細胞薄壁細胞、厚壁細胞及纖維的排列及 厚度不同導致，其中厚壁細胞收縮最大。成熟時內果皮收縮較外果皮多，常瞬間爆開，之後 形成內捲式螺旋，測得種子最遠達9公尺，平均速度6.5m/s，彈出力最大 0.55N；老化後，形 成外翻型。纖維斜向造成螺旋，越平行越規律，在螺旋中發現內捲外翻的單節螺旋長與纖維 夾角和果莢旋轉圓周有不同的數學關係。果莢傳導不佳，但可吸放水蒸氣及輻射熱，改變含 水量，促使開裂及捲度的改變。分析 22個…",
+      "conclusionExcerpt": "",
+      "methodSignals": [
+        "模型／模擬",
+        "機制推論"
+      ]
+    },
+    {
+      "edition": 61,
+      "subject": "生物科",
+      "id": "030313",
+      "pageCount": 41,
+      "textCharacters": 21502,
+      "sourceUrl": "https://twsf.ntsec.gov.tw/activity/race-1/61/pdf/NPHSF2021-030313.pdf",
+      "sectionChecks": {
+        "摘要": true,
+        "方法": false,
+        "結果": false,
+        "結論": false
+      },
+      "abstractExcerpt": "小學在採集過程中幸運地採集到身體呈魚骨狀，較白線斑蚊大 1.5倍的大孑孓，發現其 會攻擊並掠食白線斑蚊（Aedes albopictus）孑孓。經病媒蚊專家鑑定為國內少見，但因不傳播 疾病，以致較少文獻探討掠食行為的海氏掠蚊(Lutzia halifaxii)孑孓。本研究為國內首次對海 氏掠蚊生活史及掠食行為進行之調查研究，結果有三：（1 )海氏掠蚊孑孓的棲地與白線斑蚊等 多種孑孓 重疊並掠捕 其為食 ；（2)海氏掠蚊 的孑孓期為 14~21天，公蚊壽命為…",
+      "conclusionExcerpt": "",
+      "methodSignals": [
+        "現地觀察"
+      ]
+    },
+    {
+      "edition": 61,
+      "subject": "生物科",
+      "id": "030317",
+      "pageCount": 44,
+      "textCharacters": 21171,
+      "sourceUrl": "https://twsf.ntsec.gov.tw/activity/race-1/61/pdf/NPHSF2021-030317.pdf",
+      "sectionChecks": {
+        "摘要": true,
+        "方法": true,
+        "結果": false,
+        "結論": false
+      },
+      "abstractExcerpt": "本實驗研究豌豆葉捲鬚的向觸性表現，其「纏繞」行為會受到「接觸」物體和「光源」的影 響。我們觀察葉捲鬚會自發性在空中環繞，似乎在搜尋攀附物，當葉捲鬚的「前端」部位直接碰 觸竿子在60 分鐘內即「抓竿」，相較其他部位觸竿或者未直接碰觸竿子相比，快速纏繞生長。 我們也發現莖條在側光源和竿子反向環境中會向光彎曲生長，導致捲鬚前端能「向觸纏繞」比例 低，且纏繞圈數只有 1-2圈。同樣在黑暗的環境中，纏繞的速度、圈數顯著降低。我們推測葉捲 鬚的前端具「感應」能力，表現…",
+      "conclusionExcerpt": "",
+      "methodSignals": [
+        "現地觀察"
+      ]
+    },
+    {
+      "edition": 62,
+      "subject": "化學科",
+      "id": "030205",
+      "pageCount": 45,
+      "textCharacters": 23274,
+      "sourceUrl": "https://twsf.ntsec.gov.tw/activity/race-1/62/pdf/NPHSF2022-030205.pdf",
+      "sectionChecks": {
+        "摘要": true,
+        "方法": true,
+        "結果": false,
+        "結論": false
+      },
+      "abstractExcerpt": "蛋白凝膠富有彈性、保存性及營養，除了可食用也有多種加工特性，是肉製品中不可或 缺的配料。若能控制凝膠的特性可使其更加貼和市場的需求以應用於乳化型肉製品或火鍋料 等食品，故我們以此為出發點來研究不同變因對蛋白凝膠的影響。 實驗發現蛋白混合液的最終 pH須 12以上才會變性形成凝膠。加入金屬離子可減少帶負 電的蛋白質分子間相互排斥的靜電力；+2 與+3價之金屬陽離子與+1 價離子相比，更能提供 蛋白分子間更多的連結點來形成凝膠。蛋白液溫度實驗顯示溫度越高凝結越…",
+      "conclusionExcerpt": "",
+      "methodSignals": [
+        "機制推論"
+      ]
+    },
+    {
+      "edition": 62,
+      "subject": "化學科",
+      "id": "030208",
+      "pageCount": 44,
+      "textCharacters": 22173,
+      "sourceUrl": "https://twsf.ntsec.gov.tw/activity/race-1/62/pdf/NPHSF2022-030208.pdf",
+      "sectionChecks": {
+        "摘要": true,
+        "方法": false,
+        "結果": false,
+        "結論": true
+      },
+      "abstractExcerpt": "本研究在尋找適合的有機化合物作為發光的材料，探討以「對二苯氨基苯乙烯丙二氰 ((E)-2-(4- (diphenylamino)styryl)malononitrile)，DPSMN」製成特定濃度之有機化合物溶液，以此 溶液和含有氰離子之溶液在常溫下進行化學反應，其反應前和反應後的化合物經過某種特定 波長的入射光(紫外光)照射後發出不同可見光波長的螢光，利用此螢光分析水溶液中的氰離 子含量。",
+      "conclusionExcerpt": "27 本研究設計與合成 DPSMN螢光感測器，利用 DPSMN中的碳-碳雙鍵結構可與氰離子進行加 成反應，使碳-碳雙鍵變為碳-碳單鍵而改變了整個分子的電子結構，且分子的能隙也相對應的 改變而使得 DPSMN在與氰離子反應前，可發出接近黃色的螢光，但在與氰離子反應後，螢光 的顏色變為接近藍綠光。除了螢光發光的顏色改變外，在適當的濃度條件下，也可觀察到 DPSM…",
+      "methodSignals": [
+        "量化量測",
+        "現地觀察",
+        "機制推論"
+      ]
+    },
+    {
+      "edition": 62,
+      "subject": "化學科",
+      "id": "030211",
+      "pageCount": 46,
+      "textCharacters": 25728,
+      "sourceUrl": "https://twsf.ntsec.gov.tw/activity/race-1/62/pdf/NPHSF2022-030211.pdf",
+      "sectionChecks": {
+        "摘要": true,
+        "方法": false,
+        "結果": false,
+        "結論": false
+      },
+      "abstractExcerpt": "本實驗主要利用 PLA水解形成小分子乳酸，作為燃料電池之燃料，找出 PLA塑膠水解可行方式，並使其再循環產生能量，減少塑膠產品對環境之汙 染。為尋找 PLA分解之最佳方法，以溫度和溶液種類為變因，發現 PLA水解 率隨溫度增加而上升。其中以氫氧化鈉溶液前處理再置入乙醇中水解有最佳效 果。後續改採熱熔方式直接將 PLA與氫氧化鈉混合加熱，可將 PLA完全水 解，以上述 PLA水解溶液作為燃料電池之燃料。自製燃料電池分別以氧氣與 PLA水解液為正、負極，鍍鉑鎳…",
+      "conclusionExcerpt": "",
+      "methodSignals": []
+    },
+    {
+      "edition": 62,
+      "subject": "化學科",
+      "id": "030214",
+      "pageCount": 41,
+      "textCharacters": 23549,
+      "sourceUrl": "https://twsf.ntsec.gov.tw/activity/race-1/62/pdf/NPHSF2022-030214.pdf",
+      "sectionChecks": {
+        "摘要": true,
+        "方法": false,
+        "結果": false,
+        "結論": false
+      },
+      "abstractExcerpt": "本研究欲找出可抑制脂肪酶活性之因子，故從 110年10月展開實驗，將胰脂肪酶、小 麥脂肪酶、念珠菌脂肪酶置入不同市售瓶裝茶、一系列咖啡因濃度環境中，以探討市售瓶裝 茶、咖啡因及兒茶素對三種不同酶活性之影響。另外將胰脂肪酶置入以不同沖泡手法之綠茶 溶液中，操作變因分別有不同沖泡溫度、茶葉浸泡時間、冷藏保存的時間，用以探討胰脂肪 酶於不同環境中之活性大小。研究結果顯示，對於胰脂肪酶，兒茶素跟咖啡因均會抑制其活 性，其中以咖啡因影響較為顯著。手沖綠茶之沖泡溫度及…",
+      "conclusionExcerpt": "",
+      "methodSignals": [
+        "機制推論"
+      ]
+    },
+    {
+      "edition": 62,
+      "subject": "地球科學科",
+      "id": "030503",
+      "pageCount": 43,
+      "textCharacters": 24522,
+      "sourceUrl": "https://twsf.ntsec.gov.tw/activity/race-1/62/pdf/NPHSF2022-030503.pdf",
+      "sectionChecks": {
+        "摘要": true,
+        "方法": false,
+        "結果": false,
+        "結論": true
+      },
+      "abstractExcerpt": "此研究是探討臺灣海峽沉積物種類、風力大小及風機的水下結構等因素，進行對風機穩 固度的分析。 預設在地震五弱時，臺灣灘北側及東側，位於24.0~24.5°N、118.2~120.5°E沉積物粒徑大 於0.5mm，對單樁式及螺距2mm的螺紋式風機穩固度影響較大。 蒲福風級6級風，在海峽中線到馬祖的部分大約位於25.0~26.3°N、119.3°E~120.0°E，對風 機的穩固度影響甚鉅，比5級風的傾斜角多約 12倍；在新竹、苗栗外海至海峽中線大約位於",
+      "conclusionExcerpt": "就⾃然環境影響選擇風機潛⼒場址，建議如下：",
+      "methodSignals": [
+        "機制推論"
+      ]
+    },
+    {
+      "edition": 62,
+      "subject": "地球科學科",
+      "id": "030505",
+      "pageCount": 48,
+      "textCharacters": 21322,
+      "sourceUrl": "https://twsf.ntsec.gov.tw/activity/race-1/62/pdf/NPHSF2022-030505.pdf",
+      "sectionChecks": {
+        "摘要": true,
+        "方法": true,
+        "結果": false,
+        "結論": false
+      },
+      "abstractExcerpt": "為了解台灣地區梅雨季的氣候特徵，本研究分析 2009～2021年五、六月之降雨、風場及 大氣環境。顯著降雨方面，東北部全年有雨，西南部則是五月開始才進入雨季。五至六月， 台灣顯著降雨區域逐漸南移 ，為了解此時期大氣環境演變，我們分析「SSL東亞衛星地面天 氣圖＋風場」 ，共歸納出六種流型，分別為 A北風、B東風、C南風、D北風南下、E低壓帶 及 F西風流型。我們發現， 南風流型入夏後成為主流，且流型變化有趨勢性，在整合降雨資 料發現，迎風面影響降雨甚鉅。接…",
+      "conclusionExcerpt": "",
+      "methodSignals": [
+        "模型／模擬",
+        "機制推論"
+      ]
+    },
+    {
+      "edition": 62,
+      "subject": "地球科學科",
+      "id": "030506",
+      "pageCount": 45,
+      "textCharacters": 38065,
+      "sourceUrl": "https://twsf.ntsec.gov.tw/activity/race-1/62/pdf/NPHSF2022-030506.pdf",
+      "sectionChecks": {
+        "摘要": true,
+        "方法": true,
+        "結果": true,
+        "結論": true
+      },
+      "abstractExcerpt": "這是一個關於氣團與鋒面的研究。根據我們對於 5個年度的觀雲資料所做的分析，得出 以下幾個重要結論：在動態冷氣團方面：(1).若搭配較高的濕度，大部分會產生蔽光高積雲或 滿天的灰白雲(高積、高層混合雲)，且和距離無關；(2).冷氣團的移動方式與層狀高積雲的形 成有相當密切的關係；(3).雲的分布方式由風向決定，而不是冷氣團的移動方向。若冷氣團處 於停滯狀態，對雲況的發展比較沒有影響力。在冷鋒鋒面方面：(1).鋒前以高雲族為主：①溫 度有機會出現較大的降幅、②…",
+      "conclusionExcerpt": "底下依照二個研究目的，依序呈現我們的結論：",
+      "methodSignals": [
+        "對照比較",
+        "現地觀察",
+        "機制推論"
+      ]
+    },
+    {
+      "edition": 62,
+      "subject": "地球科學科",
+      "id": "030507",
+      "pageCount": 45,
+      "textCharacters": 25392,
+      "sourceUrl": "https://twsf.ntsec.gov.tw/activity/race-1/62/pdf/NPHSF2022-030507.pdf",
+      "sectionChecks": {
+        "摘要": true,
+        "方法": true,
+        "結果": false,
+        "結論": true
+      },
+      "abstractExcerpt": "本研究的研究目的在探討影響沙灘上風成「砂波紋」外形的變因。除了實地到高雄旗津 海岸公園以及西子灣沙灘上 進行觀察測量外，我們也在實驗室中利用自行組裝的實驗器材進 行各項變因的研究。研究結果發現，以中、細砂做出 厚度至少 2 公分的 砂堆、用 7.5m/s ~",
+      "conclusionExcerpt": "本研究從實際的探查旗津、西子灣沙灘上的砂波紋開始，設計一系列的實驗，探討影響 沙灘上砂波紋的形成因素。研究結果說明如下：",
+      "methodSignals": [
+        "量化量測",
+        "現地觀察",
+        "機制推論"
+      ]
+    },
+    {
+      "edition": 62,
+      "subject": "物理科",
+      "id": "030105",
+      "pageCount": 45,
+      "textCharacters": 21025,
+      "sourceUrl": "https://twsf.ntsec.gov.tw/activity/race-1/62/pdf/NPHSF2022-030105.pdf",
+      "sectionChecks": {
+        "摘要": true,
+        "方法": false,
+        "結果": false,
+        "結論": true
+      },
+      "abstractExcerpt": "耦合振盪的現象最早由物理學家惠更斯從鐘擺的振盪發現，本研究探討之耦合擺 現象即為耦合振盪現象。實驗在長線上掛上兩條細繩，兩繩分別掛上同質量砝碼，再 分析耦合擺運動軌跡；分析得一擺擺動振幅增大時，另一擺則會減少。藉改變兩擺間 距和擺長發現：兩擺間距影響兩擺振盪週期，兩細繩同長時，週期隨擺長規律增長。 在不同數量的擺中，三擺和五擺透過改變多擺的擺長排列方式，發現各擺間的能量會 有不同的轉換，規律因此各自有異。除此之外，我們發現彈簧對振盪的影響與棉繩相 似，磁鐵…",
+      "conclusionExcerpt": "綜合以上文獻探討中對於耦合擺受力分析結果所得公式與依照本研究中五項研究 目的所進行的研究結果分析，可發現改變耦合擺的結構、擺的個數、擺動環境，對於 耦合擺運動情形、振盪週期的追蹤分析結果的差異，進而了解拍擺動時多擺之間的能 量轉換情形，如下分別敘述之：",
+      "methodSignals": [
+        "機制推論"
+      ]
+    },
+    {
+      "edition": 62,
+      "subject": "物理科",
+      "id": "030106",
+      "pageCount": 38,
+      "textCharacters": 32536,
+      "sourceUrl": "https://twsf.ntsec.gov.tw/activity/race-1/62/pdf/NPHSF2022-030106.pdf",
+      "sectionChecks": {
+        "摘要": true,
+        "方法": false,
+        "結果": false,
+        "結論": true
+      },
+      "abstractExcerpt": "本次實驗成功製作了二十顆不同重心的骰子以進行不同因素的探討，其中實驗最成 功的地方在於我們於 2cm*2cm*2cm的骰子投擲結果中取得了兩條 R2值很高之線性公式， 其中一條公式可以讓我們任意製作出「某個點數機率偏高的骰子」；另一條公式可以讓 我們任意製作出現大的機率或是出現小的機率偏高的骰子，且其中一條公式經過「偏移 比例」的方式換算能成功的預測出在不同尺寸骰子的重心的偏移對機率的影響。 另外本實驗也嘗試由「控制力量」、「控制角度」和「控制投擲面的方向…",
+      "conclusionExcerpt": "本實驗中我們成功的製作了二十顆不同重心的骰子，並以七個面向來進行試驗並觀察其 機率的變化，在試驗後本實驗的到了以下七個結論： （1）1.5cm*1.5cm*1.5cm不同重心的骰子對擲出「點數四」的機率探討 當X軸上的重心逐漸的往點數三的面移動，其點數四的機率會有顯著的增加，表示 重心的偏移對點數四出現的機率有顯著的變化。 （2）1.5cm*1.5cm*1.…",
+      "methodSignals": [
+        "量化量測",
+        "模型／模擬",
+        "現地觀察",
+        "重複驗證",
+        "機制推論"
+      ]
+    },
+    {
+      "edition": 62,
+      "subject": "物理科",
+      "id": "030116",
+      "pageCount": 47,
+      "textCharacters": 32896,
+      "sourceUrl": "https://twsf.ntsec.gov.tw/activity/race-1/62/pdf/NPHSF2022-030116.pdf",
+      "sectionChecks": {
+        "摘要": false,
+        "方法": true,
+        "結果": false,
+        "結論": false
+      },
+      "abstractExcerpt": "",
+      "conclusionExcerpt": "",
+      "methodSignals": [
+        "量化量測",
+        "模型／模擬",
+        "重複驗證"
+      ]
+    },
+    {
+      "edition": 62,
+      "subject": "物理科",
+      "id": "030117",
+      "pageCount": 34,
+      "textCharacters": 7587,
+      "sourceUrl": "https://twsf.ntsec.gov.tw/activity/race-1/62/pdf/NPHSF2022-030117.pdf",
+      "sectionChecks": {
+        "摘要": true,
+        "方法": false,
+        "結果": false,
+        "結論": false
+      },
+      "abstractExcerpt": "我們先開發有風罩的風力發電機，已証明風罩能提升或降低發電電壓，讓我們對 其中的物理原理更有學習興趣。風力發電機要迎風才能有最大的發電效率，由牛頓定 律和白努利定律解釋尾翼如何讓風力發電機迎風。白努利定律解釋了為什麼風罩截面 積愈大發電效率更高，而康達效應告訴我們發電機的位置也是重要關鍵。",
+      "conclusionExcerpt": "",
+      "methodSignals": [
+        "機制推論"
+      ]
+    },
+    {
+      "edition": 62,
+      "subject": "生物科",
+      "id": "030303",
+      "pageCount": 45,
+      "textCharacters": 17818,
+      "sourceUrl": "https://twsf.ntsec.gov.tw/activity/race-1/62/pdf/NPHSF2022-030303.pdf",
+      "sectionChecks": {
+        "摘要": true,
+        "方法": false,
+        "結果": false,
+        "結論": false
+      },
+      "abstractExcerpt": "林園濕地的海葵水溝區有美麗海葵存在，引起我們想探究海葵白化因素，並以 RGB 值量化海葵體色，以白化趨勢值比較體色變化。實驗發現美麗海葵生存的耐 受範圍為鹽度 3%~6%、溫度 12~37 °C 度、pH 值 6.4~8.5。海葵體色體柱顏色較觸手 深，環境不適時觸手變化快速。海葵體內共生藻需吸收不同波長的光，照單色光白 化趨勢值紅≒藍光>綠光，照綠光組白化較為緩和；26°C 適合海葵生長，低溫 21°C 組白化趨勢較高溫組明顯，不同溫度有不同的優勢藻類…",
+      "conclusionExcerpt": "",
+      "methodSignals": [
+        "對照比較",
+        "機制推論"
+      ]
+    },
+    {
+      "edition": 62,
+      "subject": "生物科",
+      "id": "030304",
+      "pageCount": 40,
+      "textCharacters": 16630,
+      "sourceUrl": "https://twsf.ntsec.gov.tw/activity/race-1/62/pdf/NPHSF2022-030304.pdf",
+      "sectionChecks": {
+        "摘要": true,
+        "方法": false,
+        "結果": false,
+        "結論": false
+      },
+      "abstractExcerpt": "本研究驗證多霜蠟鼠婦及光滑鼠婦的交替性轉向反應行為，並探討何種因素會影響 此反應。結果顯示，兩種鼠婦皆具有交替性轉向反應，在 95%信心水準下，有 80%以 上呈現此反應。此外，這種反應可連續發生，約 87%的鼠婦在 3次轉向中，至少連續 2 次出現交替性轉向。我們進一步探討影響轉向的因素，發現當轉向後移動距離增加，反 應頻率就愈低，並且證明沿牆行走會影響轉向方向。最後藉由步態分析證明，鼠婦轉向 時的步態與直線移動不同，內側的胸肢站立期比率較外側高，此與前…",
+      "conclusionExcerpt": "",
+      "methodSignals": [
+        "重複驗證",
+        "機制推論"
+      ]
+    },
+    {
+      "edition": 62,
+      "subject": "生物科",
+      "id": "030309",
+      "pageCount": 47,
+      "textCharacters": 25138,
+      "sourceUrl": "https://twsf.ntsec.gov.tw/activity/race-1/62/pdf/NPHSF2022-030309.pdf",
+      "sectionChecks": {
+        "摘要": true,
+        "方法": false,
+        "結果": false,
+        "結論": false
+      },
+      "abstractExcerpt": "本研究探討避債蛾(Eumeta japonica(Heylaerts)) 幼蟲做蓑巢進行防禦與蓑巢對成長各階段 的防護。結果一濕度達 80%以上與受到重壓因素，幼蟲會脫離蓑巢，離巢後能重做 3~10個新 蓑巢，幼蟲體重平均是巢重 2.348倍、蓑巢長平均是幼蟲長的 1.542倍，可使在內幼蟲獲得保 護。結果二幼蟲以 12.5±4.3gw拉力封住巢口，阻擋天敵入侵；排出軟便混體液含少許鹼性物， 對螞蟻有忌避效果；當天敵入侵，體長可縮小 0.92±0.23cm…",
+      "conclusionExcerpt": "",
+      "methodSignals": []
+    },
+    {
+      "edition": 62,
+      "subject": "生物科",
+      "id": "030314",
+      "pageCount": 41,
+      "textCharacters": 22535,
+      "sourceUrl": "https://twsf.ntsec.gov.tw/activity/race-1/62/pdf/NPHSF2022-030314.pdf",
+      "sectionChecks": {
+        "摘要": true,
+        "方法": true,
+        "結果": false,
+        "結論": true
+      },
+      "abstractExcerpt": "以潮間帶常見的紫輪參和蕩皮參為研究對象，模擬潮間帶環境並長時間錄影，針對外 型特徵、晝夜活動週期研究，更進一步加溫海水和模擬漲退潮，研究溫度和潮汐對活動量的 影響，並研究兩種海參躲藏隱蔽是否有回原石頭的行為及影響因素，最後研究兩種海參對水 流的承受能力。 本研究發現，若環境無水位變化，海參的活動週期與潮間帶漲退潮時間無明顯關聯， 海水升溫卻會使海參活動量提升，海參日夜皆可能回原石頭躲藏。無論漲退潮或乾濕，海參 都會優先選擇躲藏於石頭下，石頭為優先影響因素…",
+      "conclusionExcerpt": "紫輪參活動週期 較規律且長。蕩 皮參活動週期較 蕩皮參排泄物與 紫輪參排泄物 不規律但短。 一般沙子無不同。 主要是藻類。 水溫升高時，海 參活動量提升、 週期較規律。 蕩皮參受刺激時，居維 蕩皮參躲於石縫與石洞中。 氏管排出白色黏絲。 紫輪參藏於較大的石塊下 且底部需有濕潤細沙。 紫輪參退潮時活動量下降，漲潮時上升。活動週期最高 至最低點平均為11小時，跟…",
+      "methodSignals": [
+        "模型／模擬",
+        "機制推論"
+      ]
+    },
+    {
+      "edition": 63,
+      "subject": "化學科",
+      "id": "030206",
+      "pageCount": 35,
+      "textCharacters": 20013,
+      "sourceUrl": "https://twsf.ntsec.gov.tw/activity/race-1/63/pdf/NPHSF2023-030206.pdf",
+      "sectionChecks": {
+        "摘要": true,
+        "方法": false,
+        "結果": false,
+        "結論": false
+      },
+      "abstractExcerpt": "本研究找出木質纖維廢棄物更環保的前置處理方式：木屑過篩縮小粒徑再利用低濃度 硫酸、鹼性過氧化氫溶液二次處理，可以提高酵素水解木質纖維效率，且有效抑制不利於 酒精醱酵的「羥甲基糠醛」產生。本研究控溫在１００℃以下，酵素水解４８小時最高達 到８４％的纖維分解率與５７.２％還原醣產率。實驗設計可以大幅減少金屬離子廢液產生 與耗能，也能提升目前業界常用酸處理的產醣效率。實驗發現複合式前處理藥劑的濃度最 高只需３％且處理時間一～兩小時，可使還原醣產率比酸前處理增加３…",
+      "conclusionExcerpt": "",
+      "methodSignals": []
+    },
+    {
+      "edition": 63,
+      "subject": "化學科",
+      "id": "030208",
+      "pageCount": 31,
+      "textCharacters": 12993,
+      "sourceUrl": "https://twsf.ntsec.gov.tw/activity/race-1/63/pdf/NPHSF2023-030208.pdf",
+      "sectionChecks": {
+        "摘要": true,
+        "方法": false,
+        "結果": false,
+        "結論": true
+      },
+      "abstractExcerpt": "本研究探討以光電延長電化學電池壽命的可行性，在鋁銅電池兩電極間置入以幾丁聚醣 為載體含有葉綠素、氯化鈉、及醋酸之膠態電解質所組成的新型三明治電池。電池以鋁網為 陽極、中空銅框為陰極，太陽光經照射光敏染料的葉綠素，激發電子，傳遞電子至陽極，還 原被氧化的鋁減緩消耗，被氧化激發態的葉綠素則為經外線路傳遞到陰極的電子還原為基 態。研究結果顯示於葉綠素溶液中，加入幾丁聚醣(3.0%)、氯化鈉(0.6%)及醋酸(1.0%)，所配 出的膠態可得最好的最佳組成及條件，照…",
+      "conclusionExcerpt": "本研究的實驗已成功證實了以葉綠素光敏作用減緩電池電功率下降時間，相當於延長了 鋁銅電化學電池的壽命。在鋁網/銅框兩電極間緊密置入以幾丁聚醣為載體含有葉綠素、氯 化鈉、及醋酸之膠態電解質，藉由幾丁聚醣的多孔性可吸附葉綠素，就由幾丁聚醣的透光 性，可讓葉綠素發揮光敏作用，藉由幾丁聚醣的銨鹽可傳遞電子。本研究所組成的三明治電 池，結構相當簡單，具很低的成本，葉綠素…",
+      "methodSignals": [
+        "機制推論"
+      ]
+    },
+    {
+      "edition": 63,
+      "subject": "化學科",
+      "id": "030212",
+      "pageCount": 37,
+      "textCharacters": 25576,
+      "sourceUrl": "https://twsf.ntsec.gov.tw/activity/race-1/63/pdf/NPHSF2023-030212.pdf",
+      "sectionChecks": {
+        "摘要": true,
+        "方法": false,
+        "結果": false,
+        "結論": false
+      },
+      "abstractExcerpt": "我們查詢綠建築資料時發現可製造「透明木材」當環保建材，但相關資訊大多是介紹如 何做出成品而沒有定量討論不同變因的影響，因此我們開始設計實驗探討不同因素會如何影 響透明木的特性，並可將結果拓展至應用層面來推廣此綠建築材料。 實驗發現鹼性亞硫酸鈉法中的氫氧化鈉與亞硫酸鈉是以不同的反應機制分別將木片中的 木質素溶解出來，濃度越高、溫度越高效果越好，但氫氧化鈉濃度或反應溫度過高都會有反 效果；以極性質子性的醇類當溶劑效果最好，次佳為極性非質子性的丙酮；不同種類去木…",
+      "conclusionExcerpt": "",
+      "methodSignals": [
+        "機制推論"
+      ]
+    },
+    {
+      "edition": 63,
+      "subject": "化學科",
+      "id": "030213",
+      "pageCount": 38,
+      "textCharacters": 33485,
+      "sourceUrl": "https://twsf.ntsec.gov.tw/activity/race-1/63/pdf/NPHSF2023-030213.pdf",
+      "sectionChecks": {
+        "摘要": true,
+        "方法": true,
+        "結果": false,
+        "結論": true
+      },
+      "abstractExcerpt": "去年學姊用天然染料吸收 3w鋁基板光照硝酸銀凝膠，使染料的電子躍遷至銀離子膠體 上而還原出奈米銀變色膜。今年我們企圖將分散點狀的奈米銀成網狀格柵導電膜，為綠能的 研發盡一點心力。 我們成功的改裝偵測光照面積受光的均勻度、縮小抽氣乾燥暗箱層架及空間、整合光 照偵測系統至第三代，終於創新研發出可同步以 Arduino C語言程式取代三用電錶偵測照光 時導電膜的電阻變化與光敏電阻串接的 1KΩ電阻電壓分壓變化。 由投影片、天然染液、硝酸銀溶液、白膠、棉紗網格至交…",
+      "conclusionExcerpt": "與應用",
+      "methodSignals": [
+        "對照比較",
+        "量化量測",
+        "模型／模擬",
+        "現地觀察"
+      ]
+    },
+    {
+      "edition": 63,
+      "subject": "地球科學科",
+      "id": "030505",
+      "pageCount": 30,
+      "textCharacters": 14091,
+      "sourceUrl": "https://twsf.ntsec.gov.tw/activity/race-1/63/pdf/NPHSF2023-030505.pdf",
+      "sectionChecks": {
+        "摘要": true,
+        "方法": true,
+        "結果": false,
+        "結論": true
+      },
+      "abstractExcerpt": "前人利用太陽在同一經度的南、北兩地點過中天時的仰角差與兩地距離，換算出地球的 半徑。因測量儀器的精準度與日期、時間選擇的限制，測量方式有很大改良空間。本研究以 測距輪、公路里程牌與 Google© Map尺規工具，選擇同一經線上的南、北二測量點，量測出 直線距離，再利用手機高精度陀螺儀，自製北極星仰角測量平台，搭載應用程式 phyphox® APP，在測量點測量北極星的仰角，換算成地球半徑，量得最接近地球實際平均半徑的距離 為6366.514507km，與…",
+      "conclusionExcerpt": "本研究利用手機的高精密度陀螺儀（晶片），撘載應用程式 phyphox® APP，自製「北極 星仰角測量平台」，撘載指星筆、尋星鏡與手機（裝載 phyphox® APP），測量北極星仰角， 以測距輪量測同一經線上，南、北直線距離 5.161km，以此路段的南、北端點，測量得 到北極星仰角差為 0.045561248∘，換算成地球半徑 6500.738342公里…",
+      "methodSignals": [
+        "量化量測",
+        "模型／模擬"
+      ]
+    },
+    {
+      "edition": 63,
+      "subject": "地球科學科",
+      "id": "030508",
+      "pageCount": 39,
+      "textCharacters": 15913,
+      "sourceUrl": "https://twsf.ntsec.gov.tw/activity/race-1/63/pdf/NPHSF2023-030508.pdf",
+      "sectionChecks": {
+        "摘要": true,
+        "方法": false,
+        "結果": true,
+        "結論": false
+      },
+      "abstractExcerpt": "本研究延續上屆台灣東部海岸鐵砂與磁鐵砂含量分析，於 2022年9月至2023年4月 進行，目的是希望透過親自動手操作以探討東部海岸鐵砂煉鐵之可能性。 經文獻探討得知，花蓮崇德有煉鐵遺址並參考十三行博物館之煉鐵方法，於是進行 13 次實驗，實驗於每週 2小時之獨立研究課進行，受時間限制，採分階段實驗，初階實驗：熟 悉煉鐵觀念及實驗操作，進階實驗：探討碳粉及鐵砂之較佳比例，高階實驗：實際模仿十三 行博物館建窯煉鐵。 研究發現，台灣東部海岸鐵砂（含崇德海砂），經…",
+      "conclusionExcerpt": "",
+      "methodSignals": [
+        "現地觀察"
+      ]
+    },
+    {
+      "edition": 63,
+      "subject": "地球科學科",
+      "id": "030509",
+      "pageCount": 37,
+      "textCharacters": 33208,
+      "sourceUrl": "https://twsf.ntsec.gov.tw/activity/race-1/63/pdf/NPHSF2023-030509.pdf",
+      "sectionChecks": {
+        "摘要": true,
+        "方法": true,
+        "結果": true,
+        "結論": false
+      },
+      "abstractExcerpt": "關於卷雲與天氣變化的研究，我們得出以下的結論：(1)卷雲出現的頻率並不固定，大多 集中在 5~7月份。(2)「量多時長」部分：①與六種天氣型態比較有關聯性；②形成卷雲的高 空水氣全部來自於熱對流系統(包含滯留鋒型熱對流)；③天氣系統靠近台灣時卷雲就會變得 比較厚，也愈容易出現積雲。(3)有七種天氣型態會導致卷雲出現「量多時短」的雲況。(4)有 三種天氣型態會導致卷雲出現特長外形。(5)熱對流在強勢發展的過程中，容易被強風吹出特 長密狀卷雲。(6)不管是「位…",
+      "conclusionExcerpt": "",
+      "methodSignals": [
+        "對照比較",
+        "現地觀察"
+      ]
+    },
+    {
+      "edition": 63,
+      "subject": "地球科學科",
+      "id": "030511",
+      "pageCount": 37,
+      "textCharacters": 29521,
+      "sourceUrl": "https://twsf.ntsec.gov.tw/activity/race-1/63/pdf/NPHSF2023-030511.pdf",
+      "sectionChecks": {
+        "摘要": true,
+        "方法": false,
+        "結果": false,
+        "結論": true
+      },
+      "abstractExcerpt": "本研究藉由文獻探討和實地探勘了解沖積扇 的外觀特色，並以 模擬實驗探討影響沖積扇 形成的環境因素。研究結果發現沖積扇的形成過程包含了堆積與擴散的過程，河流帶來的沉 積物顆粒較大時，堆積作用較明顯；而沉積物顆粒較小時，沖積扇的擴散作用較明顯。支流 坡度的增加與降雨時間拉長都會導致沖積扇的堆積與擴散作用明顯提升，而 降雨強度的增加 會明顯增加沖積扇的擴散作用。本研究也 發現沖積扇上的建築物 ，須 遠離河岸、扇頂、扇端， 才可大幅降低 未來災害的危害 。希冀透過…",
+      "conclusionExcerpt": "我們根據查詢文獻與實地走訪荖濃溪上游河谷，觀察沖積扇的形狀，並設計出一連串的 實驗，研究結果說明如下：",
+      "methodSignals": [
+        "模型／模擬",
+        "現地觀察",
+        "機制推論"
+      ]
+    },
+    {
+      "edition": 63,
+      "subject": "物理科",
+      "id": "030106",
+      "pageCount": 39,
+      "textCharacters": 24769,
+      "sourceUrl": "https://twsf.ntsec.gov.tw/activity/race-1/63/pdf/NPHSF2023-030106.pdf",
+      "sectionChecks": {
+        "摘要": true,
+        "方法": true,
+        "結果": true,
+        "結論": true
+      },
+      "abstractExcerpt": "當水滴碰撞親疏交錯界面，直線、弧線及螺線親疏線條決定了水滴鋪展收縮的對稱形態 與受力，研究發現水滴有分割、彈跳、移動、旋轉等多樣化運動現象，接著以此基礎提出「水 滴移動猜想」並且驗證成功：水滴置於繪有親水弧線道的疏水振動平板上，會因為持續的不 對稱鋪展收縮產生了振動-移動現象，且和水滴大小、振幅頻率、親疏線型、平板材質、張力 黏度、角度…有關。本研究亦嘗試控制水滴使其產生繞圓周、直角過彎、爬坡下坡等現象， 更測試出「懸吊」水滴的振動-移動。最後，針對其形態…",
+      "conclusionExcerpt": "與建議",
+      "methodSignals": [
+        "量化量測",
+        "模型／模擬",
+        "重複驗證"
+      ]
+    },
+    {
+      "edition": 63,
+      "subject": "物理科",
+      "id": "030108",
+      "pageCount": 37,
+      "textCharacters": 8181,
+      "sourceUrl": "https://twsf.ntsec.gov.tw/activity/race-1/63/pdf/NPHSF2023-030108.pdf",
+      "sectionChecks": {
+        "摘要": true,
+        "方法": false,
+        "結果": false,
+        "結論": false
+      },
+      "abstractExcerpt": "我們利用一般裝潢使用測量距離的雷射測距儀，配合理論推導，自行設計實驗方法與步 驟，成功地精確測量各種水溶液在室溫下的折射率。透過我們的實驗方法與高中光學插針法 測量液體折射率的實驗比較，測量誤差比插針法得到的實驗結果小一個數量級。我們還利用 此實驗方法精確測量不同濃度的各種水溶液之折射率，探討折射率與濃度之間的線性關係。 我們更進一步測量雙溶質水溶液與不互溶的兩液體，發現其折射率皆具有線性疊加的關係。 - 1 -",
+      "conclusionExcerpt": "",
+      "methodSignals": [
+        "對照比較",
+        "量化量測",
+        "機制推論"
+      ]
+    },
+    {
+      "edition": 63,
+      "subject": "物理科",
+      "id": "030109",
+      "pageCount": 37,
+      "textCharacters": 21285,
+      "sourceUrl": "https://twsf.ntsec.gov.tw/activity/race-1/63/pdf/NPHSF2023-030109.pdf",
+      "sectionChecks": {
+        "摘要": true,
+        "方法": false,
+        "結果": false,
+        "結論": true
+      },
+      "abstractExcerpt": "鳥羽箭為鄒族獵人必須學習重要的狩獵技術，蘊含流體力學知識。經由耆老的指導鄒族 鳥羽弓箭製作，發現鳥羽弓箭的確可以增加射程及準確率。接著進行最佳化探討，研究發現 如下:(1)製弓要使用4節桂竹，(2)箭長度最佳為使用 90公分箭竹，(3)最適合黏貼藍腹鷴羽毛 o o 於箭尾，(5)射擊的角度 0與45有最遠的射程，箭尾增加射程及準確率也可於小型鳥羽箭射 擊模型被證實。接著探討藍腹鷴羽毛作為箭羽的優點，經實體實驗及模擬實驗相互比對，發 現藍腹鷴的羽毛具有穩定流…",
+      "conclusionExcerpt": "29 本研究主要目的為確認鄒族鳥羽箭(在弓箭上黏上鳥羽)的設計的確可以增加射程及準確 率，接著進行製作鄒族鳥羽箭最佳化的探討，並且以流體力學相關知識深入探討鄒族獵人以 藍腹鷴羽毛作為鳥羽箭材料之原因，並以其他羽毛進行比較，其結果統整如下:",
+      "methodSignals": [
+        "對照比較",
+        "模型／模擬",
+        "機制推論"
+      ]
+    },
+    {
+      "edition": 63,
+      "subject": "物理科",
+      "id": "030114",
+      "pageCount": 36,
+      "textCharacters": 15218,
+      "sourceUrl": "https://twsf.ntsec.gov.tw/activity/race-1/63/pdf/NPHSF2023-030114.pdf",
+      "sectionChecks": {
+        "摘要": true,
+        "方法": false,
+        "結果": true,
+        "結論": false
+      },
+      "abstractExcerpt": "本研究主要想了解兩互溶流體間形成碎形圖案之機制，並找出實驗證據，經由將不同濃 度的染色液滴滴到不同濃度的壓克力顏料溶液上，並使用 iphone 8 手機以240 fps拍攝液滴 擴展過程，得知酒精液滴因表面張力小，而向外流動，且因流體間互溶之緣故，造成流速的 不連續性(虎皮紋的流痕)，而在外圍產生不均勻的堆積(島紋)，當堆積過多時，便會發生突 破(顯微攝影拍到突破瞬間)，而長出手指，同時堆積會由突破口轉移到手指指尖，當堆積夠 多時，指尖又會再分裂出新的碎形…",
+      "conclusionExcerpt": "",
+      "methodSignals": [
+        "重複驗證",
+        "機制推論"
+      ]
+    },
+    {
+      "edition": 63,
+      "subject": "物理科",
+      "id": "030119",
+      "pageCount": 35,
+      "textCharacters": 15614,
+      "sourceUrl": "https://twsf.ntsec.gov.tw/activity/race-1/63/pdf/NPHSF2023-030119.pdf",
+      "sectionChecks": {
+        "摘要": true,
+        "方法": false,
+        "結果": false,
+        "結論": false
+      },
+      "abstractExcerpt": "本實驗目的在探討雙珠系統轉動情形，我們以高速攝影機，Tracker分析軟體探討彈力 串珠繩長度、彈力串珠繩數目、彈力串珠繩轉動圈數、鐵珠質量、雙鐵珠不同質量、接觸面 材質等不同變因下，其開闔週期、轉動圈數、最大半徑及轉動週期間的相關性，並進一步找 出雙珠系統運動原理。 由實驗結果可發現，不論是從哪一項變因探討，雙珠系統過程皆符合彈力串珠繩與鐵珠 間位能與動能轉換原理。因過程中摩擦力持續作用下，轉動過程中系統總能量也會隨時間而 減少。",
+      "conclusionExcerpt": "",
+      "methodSignals": [
+        "機制推論"
+      ]
+    },
+    {
+      "edition": 63,
+      "subject": "生物科",
+      "id": "030306",
+      "pageCount": 37,
+      "textCharacters": 25309,
+      "sourceUrl": "https://twsf.ntsec.gov.tw/activity/race-1/63/pdf/NPHSF2023-030306.pdf",
+      "sectionChecks": {
+        "摘要": true,
+        "方法": false,
+        "結果": false,
+        "結論": true
+      },
+      "abstractExcerpt": "為了探討蓋斑鬥魚的攝食偏好以及找出主導攝食行為的感官系統，我們採用了 3種實驗 槽，17隻蓋斑鬥魚，設計 9項實驗來進行證明我們的假設。結果發現，蓋斑鬥魚偏好吃顏色 鮮艷味道濃郁紅蟲 (48.3%)明顯高於顏色灰黃、味道較淡的乾燥紅蟲 (22.5%)。蓋斑鬥魚無法 正確分辨真假餌（1：1），假餌偏好紅色＞棕色＞白色。只要有微弱光線就能成功攝食，達",
+      "conclusionExcerpt": "由本研究的九項實驗可歸納出一下幾點結論：",
+      "methodSignals": []
+    },
+    {
+      "edition": 63,
+      "subject": "生物科",
+      "id": "030315",
+      "pageCount": 41,
+      "textCharacters": 23685,
+      "sourceUrl": "https://twsf.ntsec.gov.tw/activity/race-1/63/pdf/NPHSF2023-030315.pdf",
+      "sectionChecks": {
+        "摘要": true,
+        "方法": false,
+        "結果": false,
+        "結論": false
+      },
+      "abstractExcerpt": "本研究探討黃胸錐腹蜾蠃(Delta pyriforme)交尾、做巢、產卵、育幼等生殖行為。結果一雌 雄壺蜂平均性成熟為77±10.8、63.7±5.7 小時，交尾結合只有 11秒。結果二壺蜂用大顎與前 足以 0.8×10-3m/s速度拍打泥球，讓巢固定成型，結蜂繭後巢硬度達 4269gw。結果三受微風 影響卵搖 9.3次/s，此時卵柄的張力對卵做出 164.3nkg.m/s衝量值，當衝量越大、卵搖晃時間 越長、停下時間要越久。結果四壺蜂會依不同體型獵物，施…",
+      "conclusionExcerpt": "",
+      "methodSignals": [
+        "機制推論"
+      ]
+    },
+    {
+      "edition": 63,
+      "subject": "生物科",
+      "id": "030316",
+      "pageCount": 38,
+      "textCharacters": 21185,
+      "sourceUrl": "https://twsf.ntsec.gov.tw/activity/race-1/63/pdf/NPHSF2023-030316.pdf",
+      "sectionChecks": {
+        "摘要": true,
+        "方法": false,
+        "結果": false,
+        "結論": true
+      },
+      "abstractExcerpt": "降海中陸蟹遭路殺是嚴重的保育議題，本研究探討降海中陸蟹對不同色光的光趨性，評 估光趨地下廊道之可行性。研究於壽山進行白、紅、藍、紫、綠光之趨性實驗，分帳篷和水 管兩種測試，綜合結果顯示毛足特氏蟹對藍光展現最高的光趨性，白光及紅光次之，最後是 紫光及綠光，在綠光閃爍下呈現明顯的迴避性。接著於墾丁香蕉灣進行藍光誘導實驗，得出 多數降海中毛足特氏蟹被光源吸引而由藍光處離開。本研究為國內外首次對降海中陸蟹進行 光趨性實驗，得出以下結論：降海中毛足特氏蟹對藍光有顯著…",
+      "conclusionExcerpt": "（一）【實驗一】色光趨性實驗 以白、紅、藍、紫、綠五種色光於帳篷內進行實驗，作為毛足特氏蟹在不同色光下趨 性研究之前測試。結果顯示陸蟹對不同色光有顯著之行為差異，以藍光之光趨性最為 顯著，其次是白、紅光，接下來為綠光，最後為紫光。 （二）【實驗二】特定色光趨性實驗 調整帳篷與光源裝置，以降低觀測者的干擾，提供陸蟹明確的光源與黑暗區。於帳篷 內對白、藍、紫三種…",
+      "methodSignals": [
+        "模型／模擬",
+        "現地觀察",
+        "重複驗證",
+        "機制推論"
+      ]
+    },
+    {
+      "edition": 63,
+      "subject": "生物科",
+      "id": "030319",
+      "pageCount": 37,
+      "textCharacters": 16788,
+      "sourceUrl": "https://twsf.ntsec.gov.tw/activity/race-1/63/pdf/NPHSF2023-030319.pdf",
+      "sectionChecks": {
+        "摘要": true,
+        "方法": false,
+        "結果": false,
+        "結論": false
+      },
+      "abstractExcerpt": "本研究探討外加電位差變化對含羞草觸發運動的影響機制。我們發現含羞草葉齡會影響 電阻變化量及閉合速率。使用 9V以上外加電壓能使含羞草產生觸發運動，電壓越高能使閉 合速率加快。長時間外加電位差刺激時，閉合會產生延遲現象，刺激時間越長閉合反應越 慢，恢復時間也會延長，並影響鄰近葉片的閉合速率。外加電位差刺激會使葉片從負極到正 極閉合，具方向性，推測電子流可使細胞膜外產生電中和，導致去極化產生動作電位，並引 發離子通道開啟，使葉枕細胞水分釋出葉片閉合；長時間刺激…",
+      "conclusionExcerpt": "",
+      "methodSignals": [
+        "機制推論"
+      ]
+    },
+    {
+      "edition": 63,
+      "subject": "生物科",
+      "id": "030321",
+      "pageCount": 38,
+      "textCharacters": 22776,
+      "sourceUrl": "https://twsf.ntsec.gov.tw/activity/race-1/63/pdf/NPHSF2023-030321.pdf",
+      "sectionChecks": {
+        "摘要": true,
+        "方法": true,
+        "結果": false,
+        "結論": false
+      },
+      "abstractExcerpt": "本實驗探討皇宮菜為適應乾旱的訊息調控機轉，我們發現不同生長階段耐旱程度不同，具耐 旱力的成熟植株透過氣孔密度提高、氣孔簇發生和降低氣孔張開度，來減緩水分蒸散速率以維持 葉子含水量，同時也發現皇宮菜在乾旱脅迫下過氧化氫的提高。我們噴施過氧化氫於耐旱力低的 幼苗葉片，結果顯示氣孔密度和氣孔簇增加以提高葉片含水量，增強幼苗的耐旱性。當以抗氧化 劑處理會降低 成熟植株的抗旱能力，且進一步證實過氧化氫參與ABA的訊息調控機轉，改變表 皮細胞形態和氣孔分布，並透過鈣離…",
+      "conclusionExcerpt": "",
+      "methodSignals": [
+        "機制推論"
+      ]
+    },
+    {
+      "edition": 64,
+      "subject": "化學科",
+      "id": "030202",
+      "pageCount": 37,
+      "textCharacters": 35301,
+      "sourceUrl": "https://twsf.ntsec.gov.tw/activity/race-1/64/pdf/NPHSF2024-030202.pdf",
+      "sectionChecks": {
+        "摘要": true,
+        "方法": false,
+        "結果": false,
+        "結論": false
+      },
+      "abstractExcerpt": "自製光度計作為溶液濃度大小檢量的工具效果媲美分光光度計。手機色彩 APP以色碼 值換算出歐式距離，找出其與濃度的關係，可作為簡易判斷濃度範圍的工具。 找出室內空汙游離甲醛的源頭，建議祭祀減香，非水性指甲油減少使用，水性乳膠漆使 用較油性漆好。 將蝦殼再製成幾丁聚醣，將菜葉果皮製成環保酵素，兩者皆證實可捕捉游離甲醛，一次 達成廢棄物回收再利用和捕捉甲醛二大目的。 小蘇打、幾丁聚醣、茶渣及蘋果酵素等可消除溶液中甲醛。 幾丁聚醣、蘋果酵素、蔬菜酵素、橘子酵素分別…",
+      "conclusionExcerpt": "",
+      "methodSignals": [
+        "機制推論"
+      ]
+    },
+    {
+      "edition": 64,
+      "subject": "化學科",
+      "id": "030207",
+      "pageCount": 34,
+      "textCharacters": 21425,
+      "sourceUrl": "https://twsf.ntsec.gov.tw/activity/race-1/64/pdf/NPHSF2024-030207.pdf",
+      "sectionChecks": {
+        "摘要": true,
+        "方法": true,
+        "結果": false,
+        "結論": true
+      },
+      "abstractExcerpt": "「鏽」是金屬表面因氧化而產生的氧化物或是氫氧化物，是一種氧化反應的產物，金屬的氧化生 鏽，在有氧及潮溼的環境中，最容易發生，如果有酸性物質存在，則會加速生鏽，影響金屬生鏽的原 因包括：金屬材質種類(活性大小)、氧氣供應、水氣濕度、溫度、金屬浸泡溶液酸鹼性、材質變形處 理等因素有關。 本活動探討影響金屬生鏽的因素：金屬材質種類、氧氣、水分、溫度、溶液酸鹼性、金屬形狀、 覆蓋物等，我們以簡易材料設計實驗探討金屬生鏽的因素，同時探討防鏽的方法。 研究動機 家中有…",
+      "conclusionExcerpt": "：",
+      "methodSignals": [
+        "機制推論"
+      ]
+    },
+    {
+      "edition": 64,
+      "subject": "化學科",
+      "id": "030210",
+      "pageCount": 36,
+      "textCharacters": 20369,
+      "sourceUrl": "https://twsf.ntsec.gov.tw/activity/race-1/64/pdf/NPHSF2024-030210.pdf",
+      "sectionChecks": {
+        "摘要": true,
+        "方法": false,
+        "結果": false,
+        "結論": false
+      },
+      "abstractExcerpt": "本實驗利用自製光譜儀製作出薑黃素檢量線，並與UV-VIS 的檢量線做比較，發現自製 光譜可有效檢測薑黃素之最大吸收峰值，可檢測出市售含薑黃素產品中的薑黃素含量。另外 也以自製光譜製作出了薑黃素與硼螯合反應之檢量線，發現薑黃素與硼的濃度越高，螯合程 度越好，效果越佳；除此之外，利用自製光譜也探討了螯合反應之錯合物與水浴時間關係， 發現文獻中所提及的水浴並不是必要的步驟，僅需蒸乾即可產生螯合物，但水浴時間越長， 螯合物濃度越高，也發現螯合反應後不同放置時間的顏…",
+      "conclusionExcerpt": "",
+      "methodSignals": [
+        "對照比較",
+        "機制推論"
+      ]
+    },
+    {
+      "edition": 64,
+      "subject": "化學科",
+      "id": "030212",
+      "pageCount": 40,
+      "textCharacters": 23249,
+      "sourceUrl": "https://twsf.ntsec.gov.tw/activity/race-1/64/pdf/NPHSF2024-030212.pdf",
+      "sectionChecks": {
+        "摘要": true,
+        "方法": false,
+        "結果": false,
+        "結論": false
+      },
+      "abstractExcerpt": "首先以滴管、滴定管、水平微量滴定管等現有滴定裝置進行酸鹼滴定測試，滴定終 點時呈現的色澤深淺並不一致，經實驗發現，造成滴定終點色澤深淺不同的主因，是現 有滴定裝置產生液滴過大所致。接著針對液滴過大之缺點進行改良，利用螺旋擠壓原理 搭配針頭為液滴出口，自製第一代滴定裝置；進而應用氣流吹落殘液，自製第二代滴定 裝置。本研究改良型滴定裝置，具備螺旋擠壓液滴、氣流吹落殘液等兩大亮點，可使產 生之液滴更微小。最後經實際測試，使用改良型滴定裝置所產生液滴更微小，可使滴…",
+      "conclusionExcerpt": "",
+      "methodSignals": []
+    },
+    {
+      "edition": 64,
+      "subject": "地球科學科",
+      "id": "030501",
+      "pageCount": 36,
+      "textCharacters": 32963,
+      "sourceUrl": "https://twsf.ntsec.gov.tw/activity/race-1/64/pdf/NPHSF2024-030501.pdf",
+      "sectionChecks": {
+        "摘要": true,
+        "方法": false,
+        "結果": false,
+        "結論": false
+      },
+      "abstractExcerpt": "本研究基於 Google Earth Engine 雲端平台和 JavaScript 程式語法，透過隨機森林分類器的 監督式學習，對臺南市安南區四草區域的紅樹林進行自動分類。利用 Sentinel 2 衛星影像資料 集，結合文獻的函數公式，對紅樹林植物的面積分布、變化進行統計，並估算藍碳儲存量。 此外，計算了常態化差值植生指標（NDVI ）和常態化差值水體指標（NDWI ），並將其標示 於地圖上。同時，使用 Modis LST 和 CHIRPS 資料集分析…",
+      "conclusionExcerpt": "",
+      "methodSignals": [
+        "量化量測",
+        "模型／模擬",
+        "機制推論"
+      ]
+    },
+    {
+      "edition": 64,
+      "subject": "地球科學科",
+      "id": "030502",
+      "pageCount": 37,
+      "textCharacters": 37192,
+      "sourceUrl": "https://twsf.ntsec.gov.tw/activity/race-1/64/pdf/NPHSF2024-030502.pdf",
+      "sectionChecks": {
+        "摘要": true,
+        "方法": true,
+        "結果": false,
+        "結論": true
+      },
+      "abstractExcerpt": "本研究探討非牛頓流體阻尼位於地上不同樓層及地下室的減震效果。我們以樂高動 力積木搭配伺服馬達及程式控制器自製地震模擬器，體積較小，且能透過調整程式的功 率模擬不同震度的 S波，進而討論不同震度在相同變因中的差異。此外，我們為建築物 設計地下室結構，並將非牛頓流體阻尼放入地下室外牆，觀察減震效果，實驗得知，地 下室外牆放入阻尼皆較填入輕黏土更減震。同時，我們也製作不同長細比及不同建材的 建築，分析數據後得出最減震、最具安全性的結構比例和建築材料。並比較建築上…",
+      "conclusionExcerpt": "通過調整實驗方法，我們提高數據穩定性，並確定各級震度的功率範 圍。有助了解馬達功率和震度間的相關，提供基礎數據便於未來研究和應用。 根據實驗一的實驗結果顯示，樓層高度並非唯一決定加速度的因素。低樓 層承受能量較大，破壞程度較大。此外，自然共振效影響不同樓層的加速度， 這說明為何在某些情況下高樓層的加速度不會上升。 根據實驗二，六強震度減震效果最佳，因七級震度…",
+      "methodSignals": [
+        "對照比較",
+        "量化量測",
+        "模型／模擬",
+        "現地觀察",
+        "機制推論"
+      ]
+    },
+    {
+      "edition": 64,
+      "subject": "地球科學科",
+      "id": "030503",
+      "pageCount": 40,
+      "textCharacters": 21427,
+      "sourceUrl": "https://twsf.ntsec.gov.tw/activity/race-1/64/pdf/NPHSF2024-030503.pdf",
+      "sectionChecks": {
+        "摘要": true,
+        "方法": false,
+        "結果": false,
+        "結論": false
+      },
+      "abstractExcerpt": "本研究透過親手磨製岩石薄片及數據化的礦物比例資料，探討觀音火山熔岩的差異與其 分化關係。根據相關前人研究得知觀音火山經過五次噴發，共有七種不同的火山岩，比對地 質圖於各地層分佈區域尋找新的出露地點共 17處，進行田野調查記錄與空拍、採集標本， 並磨製岩石薄片共 14片，進行岩相觀察與礦物面積比例計算。 本研究觀察到觀音山熔岩有漸變關係，從普通輝石橄欖石玄武岩→普通輝石玄武岩→普 通輝石安山岩→兩輝石安山岩→紫蘇輝石安山岩→黑雲母角閃石安山岩，符合鮑氏反應序…",
+      "conclusionExcerpt": "",
+      "methodSignals": [
+        "量化量測",
+        "模型／模擬",
+        "現地觀察",
+        "機制推論"
+      ]
+    },
+    {
+      "edition": 64,
+      "subject": "地球科學科",
+      "id": "030505",
+      "pageCount": 37,
+      "textCharacters": 39710,
+      "sourceUrl": "https://twsf.ntsec.gov.tw/activity/race-1/64/pdf/NPHSF2024-030505.pdf",
+      "sectionChecks": {
+        "摘要": true,
+        "方法": true,
+        "結果": true,
+        "結論": true
+      },
+      "abstractExcerpt": "我們依雨量多寡將大 埔里地區午後雷陣雨分作Ⅰ型 (達大雨標準)、Ⅱ型(10mm<雨量<大 雨)、Ⅲ型(雨量<10mm)，研究成果如下：(1)導致三種降雨類型的熱對流形態並不相同。(2)因 風場的不同熱對流可能發生滯留或「堆疊」現象。(3)若濃積雲穩定快速發展，則午後雷陣雨 會來得比較早。(4)可由氣溫的反轉(下降)點來判斷厚濃積雲發展情況。(5)降雨前氣溫愈高且 維持愈久，愈可能帶來較大的雨勢。(6)濃積雲-RVD 或強熱對流的包夾作用預測下雨的成效非 常…",
+      "conclusionExcerpt": "7/20 7/19 針對 2023-07-20(Ⅰ 型 )和 2023-07-19(Ⅱ 型 )來分析 (1).0800~1100時的溫度變化： 2023-07-19 升幅較 大、低層水氣充沛 ，所以濃積雲發展快 ；(2).氣 溫的反轉點：厚濃積雲的發展易使氣溫升幅變慢 甚至反轉(下降 )；若厚濃積雲發展愈快，氣溫的 降幅愈大 。(3).降雨前的高溫維持時間：…",
+      "methodSignals": [
+        "對照比較",
+        "模型／模擬",
+        "現地觀察",
+        "機制推論"
+      ]
+    },
+    {
+      "edition": 64,
+      "subject": "物理科",
+      "id": "030103",
+      "pageCount": 36,
+      "textCharacters": 14739,
+      "sourceUrl": "https://twsf.ntsec.gov.tw/activity/race-1/64/pdf/NPHSF2024-030103.pdf",
+      "sectionChecks": {
+        "摘要": true,
+        "方法": true,
+        "結果": false,
+        "結論": true
+      },
+      "abstractExcerpt": "首先，設計研究一來找出最好的輔助噴氣裝置。觀察到當裝置的出風口為1公分且 不延長路徑時，可讓吹風機的噴氣效果增強以便輔助觀察。其次，透過研究二改變機翼 模型的材質、重量、與形狀來找出最好的機翼模型。發現，材質不會影響飛行效果。而 飛機機翼形狀在寬度為10公分且形狀固定時，用長為12公分的機翼模型，可以用最少 的風力維持飛行。研究三整流，發現鼓風機製造出的氣流是紊流，所以添加吸管等材料 來達到整流的目的。發現，縮減吸管的直徑雖可讓氣流變穩，但也會消耗風力。在…",
+      "conclusionExcerpt": "在決定好實驗方向為白努力效應後，我們選定了飛機機翼作為我們的主題。為了方便觀 測，我們做了輔助噴氣裝置的實驗。發現由吹風機吸入煙霧後，通過出風口為1公分且不延 長路徑的輔助噴氣裝置(裝置1-1-1)，其噴出的煙霧最多，最適合用來輔助觀察。為了找出最 好的飛機機翼模型，我們做了研究二飛機機翼來改變機翼模型的材質，重量，與形狀。我們 發現，材質不影響結果，真正影…",
+      "methodSignals": [
+        "量化量測",
+        "模型／模擬",
+        "現地觀察",
+        "機制推論"
+      ]
+    },
+    {
+      "edition": 64,
+      "subject": "物理科",
+      "id": "030106",
+      "pageCount": 33,
+      "textCharacters": 21795,
+      "sourceUrl": "https://twsf.ntsec.gov.tw/activity/race-1/64/pdf/NPHSF2024-030106.pdf",
+      "sectionChecks": {
+        "摘要": true,
+        "方法": false,
+        "結果": false,
+        "結論": false
+      },
+      "abstractExcerpt": "本研究最初的發想來自於任天堂寶可夢遊戲中的招式「水電砲」，對其感到好奇的我們 便想藉由操作實驗來模擬其中的情形，並對於此招式能否在現實中實現，及其達成效果的可 能性，提出質疑與猜測。 我們測量不同型態的出水裝置、不同流速的水流、觀測不同噴射距離，也調整電壓大 小，發現這些變因都與水電砲的可行性有關，且意外發現流速會影響水柱的型態(連續柱狀 還是出現水花狀態)，同時也對結果有顯著的影響。但也發現出水裝置的水壓、承受水電砲 攻擊的導體厚度皆與測量結果無關。透過…",
+      "conclusionExcerpt": "",
+      "methodSignals": [
+        "量化量測",
+        "模型／模擬",
+        "機制推論"
+      ]
+    },
+    {
+      "edition": 64,
+      "subject": "物理科",
+      "id": "030112",
+      "pageCount": 39,
+      "textCharacters": 27444,
+      "sourceUrl": "https://twsf.ntsec.gov.tw/activity/race-1/64/pdf/NPHSF2024-030112.pdf",
+      "sectionChecks": {
+        "摘要": true,
+        "方法": false,
+        "結果": false,
+        "結論": false
+      },
+      "abstractExcerpt": "本硏究運用波以爾定律以及托里切利原理，討論不同口徑對應不同水柱壓下，因開口的 表面張力及邊界層效應產生之｢綜効表面壓」，模擬與實測漏水量的變化。 實驗操作流程為以管長L一端開口一端封閉的水柱管，開口朝上注入高h的水量，將其 封閉倒置後，其水柱管內氣壓與外界P0相同。開啟底部使其漏水至平衡，結果發現使用一般 的水就可以簡易量測大氣壓力的條件。 進一步探討擾動對系統的影響，在綜効表面壓的作用下，於特定的震度和震頻時瓶口的 加速度具有週期行為，並得出本系統應用於…",
+      "conclusionExcerpt": "",
+      "methodSignals": [
+        "量化量測",
+        "模型／模擬",
+        "機制推論"
+      ]
+    },
+    {
+      "edition": 64,
+      "subject": "物理科",
+      "id": "030114",
+      "pageCount": 37,
+      "textCharacters": 21882,
+      "sourceUrl": "https://twsf.ntsec.gov.tw/activity/race-1/64/pdf/NPHSF2024-030114.pdf",
+      "sectionChecks": {
+        "摘要": true,
+        "方法": false,
+        "結果": true,
+        "結論": true
+      },
+      "abstractExcerpt": "本報告旨在探討不同形狀的物體在振動液面上的運動現象，通過改變物體形狀、漂與浮 的狀態，及實驗時的振動條件，觀察物體的行為，並以液體表面張力、漂體與液面夾角的變 化、振動模式與流場狀態解釋。研究發現：疏水性漂體因表面張力漂在振動液面上時，其重 力會造成液面凹陷，由於漂體形狀對稱性質與質量分布差異，造成各端點與液面夾角不同， 液面為漂體提供不同方向與大小的作用力，並產生不同的流場，使其移動與轉動，其(角)速 度受液體種類、振幅、頻率、漂體質量影響。此外，在振動…",
+      "conclusionExcerpt": "與建議",
+      "methodSignals": [
+        "現地觀察",
+        "機制推論"
+      ]
+    },
+    {
+      "edition": 64,
+      "subject": "物理科",
+      "id": "030116",
+      "pageCount": 36,
+      "textCharacters": 19887,
+      "sourceUrl": "https://twsf.ntsec.gov.tw/activity/race-1/64/pdf/NPHSF2024-030116.pdf",
+      "sectionChecks": {
+        "摘要": true,
+        "方法": false,
+        "結果": false,
+        "結論": false
+      },
+      "abstractExcerpt": "我們以實驗室容易取得的重物與乒乓球模擬網路上跳水彈射手中球體的沃辛頓射流實 驗。結果發現圓形的類天然海棉因為具有吸水迅速、可以平穩入水的優點，因此選擇以此為 托球的載體進行實驗。依據我們的實驗結果，至少需要 15 公分水深才能形成完整的射流彈 射出乒乓球，原則上在下落軌跡完全垂直於水面時，落下高度越高，球體彈射高度越高，實 際實驗水深 15 公分以上時，落下高度 50 公分彈射高度約可達 47 公分，但結果受限於托球 的海綿在落下高度 40 公分後下落軌跡…",
+      "conclusionExcerpt": "",
+      "methodSignals": [
+        "模型／模擬"
+      ]
+    },
+    {
+      "edition": 64,
+      "subject": "生物科",
+      "id": "030306",
+      "pageCount": 39,
+      "textCharacters": 32994,
+      "sourceUrl": "https://twsf.ntsec.gov.tw/activity/race-1/64/pdf/NPHSF2024-030306.pdf",
+      "sectionChecks": {
+        "摘要": true,
+        "方法": false,
+        "結果": false,
+        "結論": false
+      },
+      "abstractExcerpt": "本研究目的主要在探討腸道菌對黃斑黑蟋蟀產卵及孵化的影響。研究發現對蟋蟀餵食植 物乳桿菌，可提高產卵數，使最後成功孵出的小蟋蟀數量較多。分析可能原因為：一、植物 乳桿菌可提高蟋蟀的食慾，使之獲得較充足營養。二、植物乳桿菌可抑制大腸桿菌、蘇力菌 及 88.89%從蟋蟀體表、腸道、產卵管分離出來的微生物，調節菌相平衡，促進蟲體健康。",
+      "conclusionExcerpt": "",
+      "methodSignals": [
+        "機制推論"
+      ]
+    },
+    {
+      "edition": 64,
+      "subject": "生物科",
+      "id": "030310",
+      "pageCount": 26,
+      "textCharacters": 19028,
+      "sourceUrl": "https://twsf.ntsec.gov.tw/activity/race-1/64/pdf/NPHSF2024-030310.pdf",
+      "sectionChecks": {
+        "摘要": true,
+        "方法": false,
+        "結果": false,
+        "結論": false
+      },
+      "abstractExcerpt": "鳳凰木的花朵擁有五片花瓣，上方花瓣與其他紅色花瓣不同，是白色底紅色斑點，根據 文獻，這片花瓣稱為旗瓣，功能是作為蜜標來吸引傳粉者。研究觀察發現鳳凰花的旗瓣會先 捲曲凋零，和蜜標存在的功能互相矛盾，本組推論與環境、授粉有關連。經研究發現，旗瓣 凋零與生長環境、花粉及花蜜是否被採集無關，與授粉方式有關。異株授粉導致旗瓣凋零的 時間提前；同株異花授粉旗瓣凋零的時間與自然狀態相近；自花授粉、無授粉則導致旗瓣凋 零的時間延後。異株授粉對鳳凰花而言是有效且成功的授粉…",
+      "conclusionExcerpt": "",
+      "methodSignals": [
+        "現地觀察"
+      ]
+    },
+    {
+      "edition": 64,
+      "subject": "生物科",
+      "id": "030312",
+      "pageCount": 38,
+      "textCharacters": 31996,
+      "sourceUrl": "https://twsf.ntsec.gov.tw/activity/race-1/64/pdf/NPHSF2024-030312.pdf",
+      "sectionChecks": {
+        "摘要": true,
+        "方法": false,
+        "結果": false,
+        "結論": true
+      },
+      "abstractExcerpt": "本研究探討枯葉大刀螳螂(Tenodera aridifolia)生殖行為，研究一交尾行為結果：過程中 雄螳螂會以78±19.8cm/s的速率逃離雌螳螂的獵捕，如被雌螳螂咬斷頭胸，可再活 5天。研 究二產卵結果：雌螳螂腹部擺動幅度 2.5±0.1cm做類心臟線螵蛸，為後代預留一道 0.744cm 出口。研究三螵蛸對卵防護結果：0.12g 水在防水片全蒸散後，螵蛸內仍有 0.06 g，受外力 擠壓後可回復 2/3形態。研究四孵化結果：前若蟲跳出螵蛸，平均重力位…",
+      "conclusionExcerpt": "(1)研究一、探討枯葉大刀螳螂『交尾的行為』實驗結論 雄螳螂達到交尾方式： 擺動腹部成功率63%，為三者之中最高。 (2)雄螳螂交尾間距 : 雌螳捕捉足與體長、體寬間 R 值分別-0.74、",
+      "methodSignals": []
+    },
+    {
+      "edition": 64,
+      "subject": "生物科",
+      "id": "030316",
+      "pageCount": 40,
+      "textCharacters": 33006,
+      "sourceUrl": "https://twsf.ntsec.gov.tw/activity/race-1/64/pdf/NPHSF2024-030316.pdf",
+      "sectionChecks": {
+        "摘要": true,
+        "方法": true,
+        "結果": false,
+        "結論": false
+      },
+      "abstractExcerpt": "將線蟲世代短、生物量大、分布廣泛以及多樣化的功能等優勢，用於監測並調節土壤服 務與食物網功能。其中拭鏡紙搭配柏門式漏斗分離土壤線蟲的效果最佳，並建立新型線蟲土 壤食物網監測模式，改善過去無法觀察土壤食物網組成問題。藉由文獻數據分析與自行採樣 結果，發現線蟲功能群因土壤肥力或擾動改變，且 c-p 1與c-p 2 功能群線蟲的占比間高度負 相關 ( -0.6 > R > -1 )，可深入探討各功能群間的交互作用，但成熟指數過高 ( MI = 3.17 ) 可能…",
+      "conclusionExcerpt": "",
+      "methodSignals": [
+        "量化量測",
+        "現地觀察",
+        "機制推論"
+      ]
+    },
+    {
+      "edition": 64,
+      "subject": "生物科",
+      "id": "030318",
+      "pageCount": 35,
+      "textCharacters": 17713,
+      "sourceUrl": "https://twsf.ntsec.gov.tw/activity/race-1/64/pdf/NPHSF2024-030318.pdf",
+      "sectionChecks": {
+        "摘要": true,
+        "方法": false,
+        "結果": true,
+        "結論": true
+      },
+      "abstractExcerpt": "本研究在了解不同植物受傷時是否會發出超聲波，及超聲波頻率是否會有差異，我們 將被子植物莖切斷後，使用自製超聲波感測器接收植物在受到傷害後發出的超聲波數據進行 分析。實驗結果發現，植物在受到切斷這類的物理傷害時，會間斷地發出60分貝以上的超聲 波。單雙子葉植物不同的維管束排列，並不影響植物發聲的狀況，而是跟植物種類的個體構 造差異有關，維管束的數量越多，發出超聲波的次數也越多；維管束面積比例越高、發出的 超聲波頻率也越高。最後我們推論植物超聲波的產生，主要是…",
+      "conclusionExcerpt": "依照我們的實驗結果討論與分析，得到以下幾點結論：",
+      "methodSignals": [
+        "量化量測",
+        "機制推論"
+      ]
+    }
+  ]
+}
