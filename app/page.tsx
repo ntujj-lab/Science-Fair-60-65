@@ -250,6 +250,6 @@ export default function Home() {
 
     {tab==='about'&&<section className="page"><div className="page-heading"><div><p className="eyebrow">About the data</p><h1>資料範圍與判讀</h1></div></div><div className="about-grid"><article><h2>目前收錄</h2><p>第60–65屆全國國中科展各科前三名共201件；其中四科自然科104件，另納入第66屆地球科學前三名4件，共108件。</p></article><article><h2>三種證據層級</h2><p><b>題名架構導引</b>依官方得獎題名整理研究設計線索；<b>官方全文索引</b>以 PDF 正文建立摘要、章節與方法訊號查核；<b>人工全文分析</b>再深入拆解研究問題、變因、量測、證據鏈與限制。</p></article><article><h2>本次更新</h2><p>第61–64屆物理、化學、生物與地球科學前三名共70件，均已下載官方作品全文並建立索引（2,800頁、約162萬可擷取字元）。第60屆生物科6件與第65屆生物科5件前三名，已重新依官方作品說明書核對摘要、研究目的、方法與結論，並統一補為人工全文分析。第66屆地球科學前三名已按官方大會獎名冊核實；分類若跨越多種現象，圓餅圖以主要研究現象計數，避免重複加總。</p></article><article className="designer-card"><h2>網頁設計</h2><p><b>廖俊傑</b><br/>桃園市自然輔導團兼任輔導員<br/><a href="mailto:ntujj@ms.tyc.edu.tw">ntujj@ms.tyc.edu.tw</a></p></article></div></section>}
     {tab==='admin'&&<ContentAdmin sourceWorks={works} onPublishedChanged={refreshPublishedContent}/>}
-    <footer className="site-credit"><span>網頁設計：桃園市自然輔導團兼任輔導員 廖俊傑</span><a href="mailto:ntujj@ms.tyc.edu.tw">ntujj@ms.tyc.edu.tw</a>{!adminAllowed&&<a className="admin-login" href="/signin-with-chatgpt?return_to=%2F%3Fadmin%3D1">管理帳號登入</a>}</footer>
+    <footer className="site-credit"><span>網頁設計：桃園市自然輔導團兼任輔導員 廖俊傑</span><a href="mailto:ntujj@ms.tyc.edu.tw">ntujj@ms.tyc.edu.tw</a>{!adminAllowed&&<a className="admin-login" href="/admin" target="_top">管理帳號登入</a>}</footer>
   </main>
 }
