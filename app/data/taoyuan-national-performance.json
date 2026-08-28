@@ -1,5 +1,11 @@
 {
   "scope": "第57–66屆全國中小學科學展覽會國中組；以學校所在地為桃園市之作品計算。",
+  "entryAllocation66": {
+    "total": 48,
+    "seniorHigh": 20,
+    "primaryJunior": 28,
+    "source": "https://twsf.ntsec.gov.tw/FileAtt.ashx?fcode=2F85FA9B181F720755FCCDA15986F938&lang=1"
+  },
   "years": [
     {"edition":57,"entries":11,"awards":7,"first":0,"second":0,"third":3,"merit":1,"other":3,"source":"https://twsf.ntsec.gov.tw/activity/race-1/57/high.html","awardDetails":[{"subject":"數學科","rank":"最佳(鄉土)教材獎"},{"subject":"數學科","rank":"第三名"},{"subject":"物理科","rank":"佳作"},{"subject":"物理科","rank":"最佳(鄉土)教材獎"},{"subject":"化學科","rank":"最佳(鄉土)教材獎"},{"subject":"生物科","rank":"第三名"},{"subject":"生活與應用科學科","rank":"第三名"}]},
     {"edition":58,"entries":10,"awards":7,"first":1,"second":2,"third":0,"merit":1,"other":3,"source":"https://twsf.ntsec.gov.tw/activity/race-1/58/high.html","awardDetails":[{"subject":"數學科","rank":"最佳團隊合作獎"},{"subject":"數學科","rank":"佳作"},{"subject":"數學科","rank":"第二名"},{"subject":"物理科","rank":"探究精神獎"},{"subject":"生物科","rank":"第一名"},{"subject":"生活與應用科學(一)科","rank":"最佳(鄉土)教材獎"},{"subject":"生活與應用科學(二)科","rank":"第二名"}]},
