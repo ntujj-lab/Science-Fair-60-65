@@ -210,7 +210,7 @@ export default function Home() {
   const openPhenomenon=(name:string)=>{setSubject(statsSubject);setPhenomenon(name);setEdition('全部');setQuery('');setTab('works')};
   const openSubjectAnalysis=()=>{const targetEdition=statsSubject==='生物科'?65:60;setAnalysisEdition(targetEdition);setAnalysisSubject(statsSubject);setSelectedCase(detailedWorks.find(w=>w.subject===statsSubject&&w.edition===targetEdition)?.id||'');setTab('patterns')};
   return <main>
-    <header className="topbar"><div><span className="brand">科展脈絡</span><small>全國國中科展研究分析</small></div><nav className="tabs" aria-label="主要分頁">{([['stats','統計首頁'],['works','作品查詢'],['patterns','研究架構'],['taoyuan','桃園十年表現'],['about','資料說明'],['admin','內容後台']] as const).map(([id,label])=><button key={id} className={tab===id?'active':''} onClick={()=>setTab(id)}>{label}</button>)}</nav></header>
+    <header className="topbar"><div><span className="brand">科展脈絡</span><small>全國國中科展研究分析</small></div><nav className="tabs" aria-label="主要分頁">{([['stats','統計首頁'],['works','作品查詢'],['patterns','研究架構'],['taoyuan','桃園十年表現'],['about','資料說明'],['admin','內容後台']] as const).map(([id,label])=><button key={id} className={tab===id?'active':''} onClick={()=>setTab(id)}>{label}</button>)}<a className="github-link" href="https://github.com/ntujj-lab/Science-Fair-60-65" target="_blank" rel="noreferrer">GitHub 原始碼 ↗</a></nav></header>
 
     {tab==='stats'&&<section className="page stats-page"><div className="intro"><div><p className="eyebrow">60–66 National Science Fair Atlas</p><h1>先看趨勢，再讀作品</h1><p>以現象與關鍵字重新整理得獎作品，快速掌握熱門研究方向與跨科規律。</p></div><button className="primary" onClick={()=>setTab('works')}>開始查詢作品 →</button></div>
       {siteNotice&&<aside className="site-notice"><div><p className="eyebrow">Site notice</p><h2>{siteNotice.title}</h2></div><p>{siteNotice.summary}</p></aside>}
@@ -240,6 +240,6 @@ export default function Home() {
 
     {tab==='about'&&<section className="page"><div className="page-heading"><div><p className="eyebrow">About the data</p><h1>資料範圍與判讀</h1></div></div><div className="about-grid"><article><h2>目前收錄</h2><p>第60–65屆全國國中科展各科前三名共201件；其中四科自然科104件，另納入第66屆地球科學前三名4件，共108件。</p></article><article><h2>三種證據層級</h2><p><b>題名架構導引</b>依官方得獎題名整理研究設計線索；<b>官方全文索引</b>以 PDF 正文建立摘要、章節與方法訊號查核；<b>人工全文分析</b>再深入拆解研究問題、變因、量測、證據鏈與限制。</p></article><article><h2>本次更新</h2><p>第61–64屆物理、化學、生物與地球科學前三名共70件，均已下載官方作品全文並建立索引（2,800頁、約162萬可擷取字元）。第60、65屆則保留28件人工全文分析。第66屆地球科學前三名已按官方大會獎名冊核實；分類若跨越多種現象，圓餅圖以主要研究現象計數，避免重複加總。</p></article><article className="designer-card"><h2>網頁設計</h2><p><b>廖俊傑</b><br/>桃園市自然輔導團兼任輔導員<br/><a href="mailto:ntujj@ms.tyc.edu.tw">ntujj@ms.tyc.edu.tw</a></p></article></div></section>}
     {tab==='admin'&&<ContentAdmin sourceWorks={works} onPublishedChanged={refreshPublishedContent}/>}
-    <footer className="site-credit"><span>網頁設計：桃園市自然輔導團兼任輔導員 廖俊傑</span><a href="mailto:ntujj@ms.tyc.edu.tw">ntujj@ms.tyc.edu.tw</a></footer>
+    <footer className="site-credit"><span>網頁設計：桃園市自然輔導團兼任輔導員 廖俊傑</span><a href="mailto:ntujj@ms.tyc.edu.tw">ntujj@ms.tyc.edu.tw</a><a href="https://github.com/ntujj-lab/Science-Fair-60-65" target="_blank" rel="noreferrer">GitHub 原始碼 ↗</a></footer>
   </main>
 }
