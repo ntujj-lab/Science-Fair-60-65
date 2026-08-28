@@ -1,0 +1,43 @@
+.subject-award-details {
+  grid-column: 1 / -1;
+  padding: 8px 0 2px;
+  border-top: 1px dashed #ddd7c8;
+}
+
+.subject-award-details summary {
+  cursor: pointer;
+  color: var(--green);
+  font-size: 11px;
+  font-weight: 700;
+  list-style-position: inside;
+}
+
+.subject-award-tags {
+  display: flex !important;
+  flex-direction: row !important;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 8px;
+}
+
+.subject-award-tags span {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 4px 7px;
+  border: 1px solid #ddd7c8;
+  border-radius: 999px;
+  background: #fffdf7;
+  line-height: 1.35;
+}
+
+.subject-award-tags b {
+  color: var(--ink);
+}
+
+.subject-award-tags em {
+  height: auto;
+  font-style: normal;
+  color: var(--orange);
+  font-weight: 700;
+}
