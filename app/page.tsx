@@ -28,6 +28,7 @@ const colors: Record<string,string> = { '振動與波':'#315d83','熱與相變':
 
 export default function Home() {
   const [tab,setTab]=useState<'stats'|'works'|'patterns'|'about'>('stats');
+  const [statsSubject,setStatsSubject]=useState<'物理科'|'化學科'|'生物科'>('物理科');
   const [analysisSubject,setAnalysisSubject]=useState<'物理科'|'化學科'|'生物科'>('物理科');
   const [selectedCase,setSelectedCase]=useState('030104');
   const [query,setQuery]=useState(''); const [edition,setEdition]=useState('全部'); const [subject,setSubject]=useState('全部'); const [phenomenon,setPhenomenon]=useState('全部');
@@ -35,7 +36,6 @@ export default function Home() {
   const distribution=useMemo(()=>Object.entries(scopeWorks.reduce<Record<string,number>>((a,w)=>{a[w.phenomenon]=(a[w.phenomenon]||0)+1;return a},{})).sort((a,b)=>b[1]-a[1]),[scopeWorks]);
   let running=0; const chartTotal=scopeWorks.length||1; const gradient=distribution.map(([name,count])=>{const start=running/chartTotal*100;running+=count;return `${colors[name]} ${start}% ${running/chartTotal*100}%`}).join(',');
   const filtered=works.filter(w=>{const hay=[w.title,w.subject,w.award,w.phenomenon,w.structure,...w.keywords].join(' ').toLowerCase();return(edition==='全部'||w.edition===Number(edition))&&(subject==='全部'||w.subject===subject)&&(phenomenon==='全部'||w.phenomenon===phenomenon)&&hay.includes(query.trim().toLowerCase())}).sort((a,b)=>a.edition-b.edition||a.subject.localeCompare(b.subject,'zh-Hant')||a.award.localeCompare(b.award,'zh-Hant'));
-  const jumpToPhenomenon=(name:string)=>{setPhenomenon(name);setTab('works')};
   const editionCounts=[60,61,62,63,64,65].map(n=>({edition:n,count:works.filter(w=>w.edition===n).length}));
   const subjectGuide={
     '物理科':{theme:'現象拆解與模型驗證',summary:'從反直覺的運動、振動、流動或能量現象出發，將看得見的變化轉為可量測參數，再用模型解釋並提出工程改良。',steps:['捕捉異常現象','定義運動與環境變因','建立影像／頻率量測','比較理論模型','製作改良裝置'],prompts:['現象中哪一個量會隨時間改變？','控制哪些條件，才能確認真正的因果變因？','量測誤差會如何改變模型判斷？','模型在哪些極端條件下可能失效？','研究成果能改善哪一個生活或工程問題？'],example:'「微風與纜車共振」先量出擺動頻率，再改變風速與結構參數，最後以伸縮吊臂增加阻尼。'},
@@ -44,12 +44,18 @@ export default function Home() {
   } as const;
   const subjectCases=detailedWorks.filter(w=>w.subject===analysisSubject);
   const activeCase=subjectCases.find(w=>w.id===selectedCase)||subjectCases[0];
+  const phenomenonWorks=works.filter(w=>w.subject===statsSubject);
+  const subjectDistribution=Object.entries(phenomenonWorks.reduce<Record<string,number>>((a,w)=>{a[w.phenomenon]=(a[w.phenomenon]||0)+1;return a},{})).sort((a,b)=>b[1]-a[1]);
+  let phenomenonRunning=0;
+  const subjectGradient=subjectDistribution.map(([name,count])=>{const start=phenomenonRunning/phenomenonWorks.length*100;phenomenonRunning+=count;return `${colors[name]} ${start}% ${phenomenonRunning/phenomenonWorks.length*100}%`}).join(',');
+  const openPhenomenon=(name:string)=>{setSubject(statsSubject);setPhenomenon(name);setEdition('全部');setQuery('');setTab('works')};
+  const openSubjectAnalysis=()=>{setAnalysisSubject(statsSubject);setSelectedCase(detailedWorks.find(w=>w.subject===statsSubject)?.id||'');setTab('patterns')};
   return <main>
     <header className="topbar"><div><span className="brand">科展脈絡</span><small>全國國中科展研究分析</small></div><nav className="tabs" aria-label="主要分頁">{([['stats','統計首頁'],['works','作品查詢'],['patterns','研究架構'],['about','資料說明']] as const).map(([id,label])=><button key={id} className={tab===id?'active':''} onClick={()=>setTab(id)}>{label}</button>)}</nav></header>
 
     {tab==='stats'&&<section className="page stats-page"><div className="intro"><div><p className="eyebrow">60–66 National Science Fair Atlas</p><h1>先看趨勢，再讀作品</h1><p>以現象與關鍵字重新整理得獎作品，快速掌握熱門研究方向與跨科規律。</p></div><button className="primary" onClick={()=>setTab('works')}>開始查詢作品 →</button></div>
       <div className="metric-grid"><article><strong>201</strong><span>60–65屆各科前三名</span></article><article><strong>82</strong><span>自然科已建檔作品</span></article><article><strong>9</strong><span>已完成全文分析</span></article><article><strong>66</strong><span>最新屆次資料整理中</span></article></div>
-      <div className="stats-grid"><article className="panel phenomenon-panel"><div className="panel-title"><div><p className="eyebrow">Phenomena</p><h2>研究主現象分布</h2></div><span>點選圖例查作品</span></div><div className="chart-row"><button className="pie" style={{background:`conic-gradient(${Object.entries(works.reduce<Record<string,number>>((a,w)=>{a[w.phenomenon]=(a[w.phenomenon]||0)+1;return a},{})).sort((a,b)=>b[1]-a[1]).reduce((parts,[name,count],i,arr)=>{const before=arr.slice(0,i).reduce((s,x)=>s+x[1],0);parts.push(`${colors[name]} ${before/works.length*100}% ${(before+count)/works.length*100}%`);return parts},[] as string[]).join(',')})`}} aria-label="82件作品研究現象圓餅圖"><span>82<small>件作品</small></span></button><div className="legend compact">{Object.entries(works.reduce<Record<string,number>>((a,w)=>{a[w.phenomenon]=(a[w.phenomenon]||0)+1;return a},{})).sort((a,b)=>b[1]-a[1]).slice(0,8).map(([name,count])=><button key={name} onClick={()=>jumpToPhenomenon(name)}><i style={{background:colors[name]}}/>{name}<b>{count}</b></button>)}</div></div></article>
+      <div className="stats-grid"><article className="panel phenomenon-panel"><div className="panel-title"><div><p className="eyebrow">Phenomena by subject</p><h2>分科研究主現象</h2></div><button className="text-link" onClick={openSubjectAnalysis}>前往{statsSubject.replace('科','')}分析 →</button></div><div className="mini-subject-tabs">{(['物理科','化學科','生物科'] as const).map(s=><button key={s} className={statsSubject===s?'active':''} onClick={()=>setStatsSubject(s)}>{s}<b>{works.filter(w=>w.subject===s).length}</b></button>)}</div><div className="chart-row"><button className="pie" style={{background:`conic-gradient(${subjectGradient})`}} aria-label={`${statsSubject}${phenomenonWorks.length}件作品研究現象圓餅圖`}><span>{phenomenonWorks.length}<small>{statsSubject}作品</small></span></button><div className="legend compact linked-legend">{subjectDistribution.map(([name,count])=><div key={name} className="phenomenon-link"><button onClick={()=>openPhenomenon(name)}><i style={{background:colors[name]}}/><span>{name}</span><b>{count}</b></button>{detailedWorks.some(w=>w.subject===statsSubject&&w.phenomenon===name)&&<button className="case-link" onClick={()=>{const match=detailedWorks.find(w=>w.subject===statsSubject&&w.phenomenon===name);setAnalysisSubject(statsSubject);setSelectedCase(match?.id||'');setTab('patterns')}}>案例分析 ↗</button>}</div>)}</div></div><p className="link-note">點選現象名稱可查看對應作品；標有「案例分析」者可直接進入全文研究架構。</p></article>
         <article className="panel edition-panel"><div className="panel-title"><div><p className="eyebrow">Editions</p><h2>各屆自然科收錄量</h2></div></div><div className="bars">{editionCounts.map(x=><button key={x.edition} onClick={()=>{setEdition(String(x.edition));setTab('works')}}><span>第{x.edition}屆</span><i><em style={{width:`${x.count/Math.max(...editionCounts.map(d=>d.count))*100}%`}}/></i><b>{x.count}</b></button>)}</div><p className="note">目前完成第60–65屆物理、化學、生物名冊整理；第66屆待官方資料核實後補入。</p></article></div>
     </section>}
 
