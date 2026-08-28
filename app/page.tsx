@@ -2,8 +2,16 @@
 
 import { useMemo, useState } from 'react';
 import rawWorks from './data/science-fair-natural.json';
+import taoyuanData from './data/taoyuan-national-performance.json';
 
 type Work = { edition:number; subject:string; award:string; id:string; title:string; school:string; phenomenon:string; keywords:string[]; structure:string; analysisLevel:'全文'|'題名' };
+const taoyuanYears=taoyuanData.years;
+const taoyuanSubjects=taoyuanData.subjects;
+const taoyuanAwardTotal=taoyuanYears.reduce((sum,year)=>sum+year.awards,0);
+const taoyuanTop3Total=taoyuanYears.reduce((sum,year)=>sum+year.first+year.second+year.third,0);
+const taoyuanHistoric=taoyuanYears.filter(year=>year.entries!==null);
+const taoyuanHistoricEntries=taoyuanHistoric.reduce((sum,year)=>sum+(year.entries||0),0);
+const taoyuanHistoricAwards=taoyuanHistoric.reduce((sum,year)=>sum+year.awards,0);
 
 const detailedWorks: Work[] = [
   { edition:60, subject:'物理科', award:'第一名', id:'030104', school:'宜蘭縣立國華國民中學', title:'熱鍋上的舞者－聚丙烯酸鈉的 Leidenfrost 效應分析', phenomenon:'熱與相變', keywords:['Leidenfrost效應','振動','聲學','能量轉換'], structure:'異常跳動 → 影像與聲音量測 → 瞬間汽化模型 → 壓電應用', analysisLevel:'全文' },
@@ -85,7 +93,7 @@ const caseInsights:Record<string,CaseInsight>={
 };
 
 export default function Home() {
-  const [tab,setTab]=useState<'stats'|'works'|'patterns'|'about'>('stats');
+  const [tab,setTab]=useState<'stats'|'works'|'patterns'|'taoyuan'|'about'>('stats');
   const [statsSubject,setStatsSubject]=useState<'物理科'|'化學科'|'生物科'|'地球科學科'>('物理科');
   const [analysisSubject,setAnalysisSubject]=useState<'物理科'|'化學科'|'生物科'|'地球科學科'>('物理科');
   const [analysisEdition,setAnalysisEdition]=useState<60|65>(60);
@@ -112,7 +120,7 @@ export default function Home() {
   const openPhenomenon=(name:string)=>{setSubject(statsSubject);setPhenomenon(name);setEdition('全部');setQuery('');setTab('works')};
   const openSubjectAnalysis=()=>{const targetEdition=statsSubject==='生物科'?65:60;setAnalysisEdition(targetEdition);setAnalysisSubject(statsSubject);setSelectedCase(detailedWorks.find(w=>w.subject===statsSubject&&w.edition===targetEdition)?.id||'');setTab('patterns')};
   return <main>
-    <header className="topbar"><div><span className="brand">科展脈絡</span><small>全國國中科展研究分析</small></div><nav className="tabs" aria-label="主要分頁">{([['stats','統計首頁'],['works','作品查詢'],['patterns','研究架構'],['about','資料說明']] as const).map(([id,label])=><button key={id} className={tab===id?'active':''} onClick={()=>setTab(id)}>{label}</button>)}</nav></header>
+    <header className="topbar"><div><span className="brand">科展脈絡</span><small>全國國中科展研究分析</small></div><nav className="tabs" aria-label="主要分頁">{([['stats','統計首頁'],['works','作品查詢'],['patterns','研究架構'],['taoyuan','桃園十年表現'],['about','資料說明']] as const).map(([id,label])=><button key={id} className={tab===id?'active':''} onClick={()=>setTab(id)}>{label}</button>)}</nav></header>
 
     {tab==='stats'&&<section className="page stats-page"><div className="intro"><div><p className="eyebrow">60–66 National Science Fair Atlas</p><h1>先看趨勢，再讀作品</h1><p>以現象與關鍵字重新整理得獎作品，快速掌握熱門研究方向與跨科規律。</p></div><button className="primary" onClick={()=>setTab('works')}>開始查詢作品 →</button></div>
       <div className="metric-grid"><article><strong>201</strong><span>60–65屆各科前三名</span></article><article><strong>108</strong><span>自然科已建檔作品</span></article><article><strong>28</strong><span>第60、65屆全文分析</span></article><article><strong>4</strong><span>第66屆地科前三名</span></article></div>
@@ -129,6 +137,14 @@ export default function Home() {
         <div className="case-detail">{activeCase&&insight&&<><div className="case-heading"><div className="work-meta"><span>第{activeCase.edition}屆</span><span>{activeCase.award}</span><span>全文分析</span></div><h2>{activeCase.title}</h2><p>{activeCase.school}</p></div><section><h3>研究架構圖</h3><div className="case-flow">{activeCase.structure.split(' → ').map((step,i)=><div key={step}><span>{i+1}</span><b>{step}</b>{i<activeCase.structure.split(' → ').length-1&&<i>→</i>}</div>)}</div></section><section className="research-core"><h3>問題與假設</h3><div><article><small>研究問題</small><p>{insight.question}</p></article><article><small>核心假設</small><p>{insight.hypothesis}</p></article></div></section><div className="variable-grid"><article><small>操縱變因</small><p>{insight.independent}</p></article><article><small>應變變因</small><p>{insight.dependent}</p></article><article><small>控制條件</small><p>{insight.controls}</p></article><article><small>量測設計</small><p>{insight.measurement}</p></article></div><div className="evidence-grid"><section><h3>證據鏈</h3><ol>{insight.evidence.map(x=><li key={x}>{x}</li>)}</ol></section><section><h3>研究限制</h3><ul>{insight.limits.map(x=><li key={x}>{x}</li>)}</ul></section></div><section className="design-lab"><div><p className="eyebrow">Design prompts</p><h3>下一步怎麼設計？</h3></div><div>{insight.extensions.map((x,i)=><article key={x}><span>{i+1}</span><p>{x}</p></article>)}</div></section></>}
           <section className="teacher-prompts"><h3>教師帶讀提示</h3><ol>{subjectGuide[analysisSubject].prompts.map(q=><li key={q}>{q}</li>)}</ol><div><b>案例提示</b><p>{subjectGuide[analysisSubject].example}</p></div></section></div>
       </div><div className="process"><h2>跨科共同得獎骨架</h2><div><span>生活異常／知識缺口</span><b>→</b><span>明確變因與對照</span><b>→</b><span>自製或校正量測</span><b>→</b><span>多證據驗證</span><b>→</b><span>模型／應用回扣</span></div></div></section>}
+
+    {tab==='taoyuan'&&<section className="page taoyuan-page"><div className="intro taoyuan-intro"><div><p className="eyebrow">Taoyuan performance · 2017–2026</p><h1>桃園市國中組十年表現</h1><p>從第57–66屆官方大會獎名冊，整理桃園市學校在全國科展國中組的得獎軌跡、強勢學科與可延續的培育線索。</p></div><button className="primary" onClick={()=>{setQuery('桃園');setEdition('全部');setSubject('全部');setPhenomenon('全部');setTab('works')}}>查詢本站收錄桃園作品 →</button></div>
+      <div className="metric-grid taoyuan-metrics"><article><strong>{taoyuanAwardTotal}</strong><span>十年大會獎作品</span></article><article><strong>{taoyuanTop3Total}</strong><span>第一至第三名作品</span></article><article><strong>{(taoyuanHistoricAwards/taoyuanHistoricEntries*100).toFixed(1)}%</strong><span>57–65屆獲獎作品率</span></article><article><strong>17</strong><span>數學科大會獎作品</span></article></div>
+      <div className="taoyuan-grid"><article className="panel taoyuan-trend"><div className="panel-title"><div><p className="eyebrow">Annual record</p><h2>逐屆成績軌跡</h2></div><span>大會獎以作品件數計</span></div><div className="year-list">{taoyuanYears.map(year=>{const top3=year.first+year.second+year.third;const rate=year.entries===null?null:Math.round(year.awards/year.entries*100);return <article key={year.edition} className={year.edition===66?'current':''}><div className="year-label"><b>第{year.edition}屆</b><span>{year.entries===null?'官方大會獎名冊':'完整國中組名冊'}</span></div><div className="year-score"><strong>{year.awards}</strong><span>件大會獎</span>{year.entries!==null&&<small>{year.entries} 件參展・{rate}%</small>}</div><div className="award-bar" aria-label={`第${year.edition}屆 ${year.awards} 件大會獎`}><i style={{width:`${year.awards/8*100}%`}}/></div><div className="award-breakdown"><span>前3名 {top3}</span><span>佳作等 {year.awards-top3}</span></div><a href={year.source} target="_blank" rel="noreferrer">官方名冊 ↗</a></article>})}</div><p className="note">第57–65屆的「參展」與「大會獎」皆由完整國中組名冊逐件統計；第66屆官方已發布大會獎名冊，完整參展名冊尚未併入，因此只呈現 8 件獲獎作品、不計入獲獎率。</p></article>
+        <aside className="panel taoyuan-insights"><div className="panel-title"><div><p className="eyebrow">What the data says</p><h2>三個閱讀重點</h2></div></div><ol><li><b>數學是最長期的高產科別。</b><span>累積 17 件大會獎、8 件進入前三名，十年中多次形成同屆多件得獎。</span></li><li><b>成績自第62屆起維持穩定。</b><span>第62–65屆連續四年各有 6 件大會獎；第66屆官方名冊已見 8 件得獎。</span></li><li><b>前段名次需要與廣度一起看。</b><span>十年 62 件大會獎中，26 件為前三名；其餘佳作與特別獎反映跨科參與的深度。</span></li></ol><div className="caution"><b>判讀提醒</b><p>這是桃園市國中組的縱向描述，不是縣市排名；各屆參展配額、獎項名稱與評比環境不同，不宜直接推論因果。</p></div></aside></div>
+      <article className="panel subject-performance"><div className="panel-title"><div><p className="eyebrow">Subject distribution</p><h2>得獎主力學科</h2></div><span>大會獎作品數／前三名數</span></div><div className="subject-performance-grid">{taoyuanSubjects.map(item=><article key={item.name}><div><b>{item.name}</b><span>{item.awards} 件・前三名 {item.top3}</span></div><i><em style={{width:`${item.awards/17*100}%`,background:item.color}}/></i></article>)}</div><p className="note">生活與應用科學依大會科別分列；若合併三個分科，共有 14 件大會獎、7 件前三名，與數學、生物共同構成桃園較穩定的作品群。</p></article>
+      <div className="taoyuan-bottom"><article className="panel"><p className="eyebrow">Representative first-place works</p><h2>高點不只是一屆的名次</h2><div className="taoyuan-featured">{taoyuanData.featured.map(work=><article key={`${work.edition}-${work.title}`}><div className="work-meta"><span>第{work.edition}屆</span><span>{work.award}</span><span>{work.subject}</span></div><h3>{work.title}</h3><p>{work.school}</p></article>)}</div></article><article className="panel method-panel"><p className="eyebrow">Method</p><h2>統計口徑</h2><ul><li>以官方「國中組」得獎名冊中，學校名稱含桃園市的作品為範圍。</li><li>同一作品即使同時有名次與特別獎，仍只計 1 件大會獎作品。</li><li>「佳作等」含佳作、團隊合作獎、探究精神獎與（鄉土）教材獎。</li><li>第66屆採官方大會獎名冊；可比較得獎數，不以未核實的參展數計算比率。</li></ul></article></div>
+    </section>}
 
     {tab==='about'&&<section className="page"><div className="page-heading"><div><p className="eyebrow">About the data</p><h1>資料範圍與判讀</h1></div></div><div className="about-grid"><article><h2>目前收錄</h2><p>第60–65屆全國國中科展各科前三名共201件；其中四科自然科104件，另納入第66屆地球科學前三名4件，共108件。</p></article><article><h2>兩種證據層級</h2><p><b>題名分類</b>用於現象與關鍵字統計；<b>全文分析</b>才用於研究問題、變因、量測、證據鏈與結論架構的深入歸納。</p></article><article><h2>持續更新</h2><p>第66屆地球科學前三名已按官方大會獎名冊核實；其餘科別與更多作品全文將持續補入。分類若跨越多種現象，圓餅圖以主要研究現象計數，避免重複加總。</p></article></div></section>}
   </main>

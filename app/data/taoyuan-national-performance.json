@@ -1,0 +1,30 @@
+{
+  "scope": "第57–66屆全國中小學科學展覽會國中組；以學校所在地為桃園市之作品計算。",
+  "years": [
+    {"edition":57,"entries":11,"awards":7,"first":0,"second":0,"third":3,"merit":1,"other":3,"source":"https://twsf.ntsec.gov.tw/activity/race-1/57/high.html"},
+    {"edition":58,"entries":10,"awards":7,"first":1,"second":2,"third":0,"merit":1,"other":3,"source":"https://twsf.ntsec.gov.tw/activity/race-1/58/high.html"},
+    {"edition":59,"entries":11,"awards":7,"first":0,"second":1,"third":3,"merit":1,"other":2,"source":"https://twsf.ntsec.gov.tw/activity/race-1/59/high.html"},
+    {"edition":60,"entries":10,"awards":4,"first":1,"second":0,"third":1,"merit":1,"other":1,"source":"https://twsf.ntsec.gov.tw/activity/race-1/60/high.html"},
+    {"edition":61,"entries":11,"awards":5,"first":0,"second":1,"third":0,"merit":3,"other":1,"source":"https://twsf.ntsec.gov.tw/activity/race-1/61/high.html"},
+    {"edition":62,"entries":12,"awards":6,"first":1,"second":0,"third":0,"merit":1,"other":4,"source":"https://twsf.ntsec.gov.tw/activity/race-1/62/high.html"},
+    {"edition":63,"entries":12,"awards":6,"first":0,"second":1,"third":2,"merit":1,"other":2,"source":"https://twsf.ntsec.gov.tw/activity/race-1/63/high.html"},
+    {"edition":64,"entries":12,"awards":6,"first":0,"second":1,"third":3,"merit":1,"other":1,"source":"https://twsf.ntsec.gov.tw/activity/race-1/64/high.html"},
+    {"edition":65,"entries":12,"awards":6,"first":0,"second":0,"third":2,"merit":3,"other":1,"source":"https://twsf.ntsec.gov.tw/activity/race-1/65/high.html"},
+    {"edition":66,"entries":null,"awards":8,"first":0,"second":1,"third":2,"merit":5,"other":0,"source":"https://twsf.ntsec.gov.tw/News-Content.aspx?lang=1&nid=1504&p=1&title="}
+  ],
+  "subjects": [
+    {"name":"數學科","awards":17,"top3":8,"color":"#315d83"},
+    {"name":"生物科","awards":11,"top3":6,"color":"#3f8b78"},
+    {"name":"物理科","awards":8,"top3":1,"color":"#d26a45"},
+    {"name":"化學科","awards":7,"top3":3,"color":"#d19b2a"},
+    {"name":"生活與應用（一）","awards":7,"top3":3,"color":"#8a6a9b"},
+    {"name":"生活與應用（二）","awards":5,"top3":3,"color":"#557c9a"},
+    {"name":"地球科學科","awards":5,"top3":1,"color":"#4a8f9b"},
+    {"name":"生活與應用（三）","awards":2,"top3":1,"color":"#806331"}
+  ],
+  "featured": [
+    {"edition":58,"award":"第一名","subject":"生物科","school":"桃園市私立新興高級中學（附設國中）","title":"菇GO！背地一「站」"},
+    {"edition":60,"award":"第一名","subject":"生活與應用科學（一）","school":"治平學校財團法人桃園市治平高級中等學校國中部","title":"正義魔人－專用停車位警示系統"},
+    {"edition":62,"award":"第一名","subject":"數學科","school":"桃園市立中興國民中學","title":"解構奧運會徽探討平面鑲嵌"}
+  ]
+}
