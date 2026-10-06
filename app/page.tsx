@@ -4,11 +4,13 @@ import { useCallback, useEffect, useMemo, useState } from 'react';
 import './taoyuan-awards.css';
 import './historical-trend.css';
 import './news.css';
+import './tools.css';
 import rawWorks from './data/science-fair-natural.json';
 import historicalAwardWorks from './data/historical-awards-55-59.json';
 import taoyuanData from './data/taoyuan-national-performance.json';
 import fullTextData from './data/fulltext-analysis-61-64.json';
 import { scienceNews, scienceNewsCheckedAt, scienceNewsRegions, scienceNewsTopics } from './data/science-news';
+import { scienceTools, scienceToolsCheckedAt, scienceToolGroups } from './data/science-tools';
 import { trackFirebaseEvent } from './lib/firebase-analytics';
 
 type Work = { edition:number; subject:string; award:string; id:string; title:string; school:string; location?:'桃園市'; sourceUrl?:string; phenomenon:string; keywords:string[]; structure:string; analysisLevel:'全文'|'題名' };
@@ -202,7 +204,7 @@ function ContentAdmin({sourceWorks,onPublishedChanged}:{sourceWorks:Work[];onPub
 }
 
 export default function Home() {
-  const [tab,setTab]=useState<'stats'|'works'|'patterns'|'taoyuan'|'news'|'about'|'admin'>('stats');
+  const [tab,setTab]=useState<'stats'|'works'|'patterns'|'taoyuan'|'news'|'tools'|'about'|'admin'>('stats');
   const [publishedContent,setPublishedContent]=useState<ManagedContent[]>([]);
   const [statsSubject,setStatsSubject]=useState<'物理科'|'化學科'|'生物科'|'地球科學科'>('物理科');
   const [analysisSubject,setAnalysisSubject]=useState('物理科');
@@ -211,13 +213,14 @@ export default function Home() {
   const [query,setQuery]=useState(''); const [edition,setEdition]=useState('全部'); const [subject,setSubject]=useState('全部'); const [phenomenon,setPhenomenon]=useState('全部');
   const [newsRegion,setNewsRegion]=useState<(typeof scienceNewsRegions)[number]>('全部');
   const [newsTopic,setNewsTopic]=useState<(typeof scienceNewsTopics)[number]>('全部');
+  const [toolGroup,setToolGroup]=useState<(typeof scienceToolGroups)[number]>('全部');
   const [adminAllowed,setAdminAllowed]=useState(false);
   const refreshPublishedContent=()=>void fetch('/api/content').then(response=>response.ok?response.json():{entries:[]}).then((data:{entries?:ManagedContent[]})=>setPublishedContent(data.entries||[])).catch(()=>setPublishedContent([]));
   const recordUsage=useCallback((eventType:UsageEventType,page:string)=>{trackFirebaseEvent('site_section_view',{section:page,legacy_event:eventType});void fetch('/api/usage',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({eventType,page})}).catch(()=>undefined);},[]);
   useEffect(()=>{refreshPublishedContent();},[]);
   useEffect(()=>{let active=true;void fetch('/api/admin/session',{cache:'no-store'}).then(response=>response.ok?response.json():{allowed:false}).then((data:{allowed?:boolean})=>{if(active)setAdminAllowed(Boolean(data.allowed));}).catch(()=>{if(active)setAdminAllowed(false);});return()=>{active=false;};},[]);
   useEffect(()=>{if(adminAllowed&&new URLSearchParams(window.location.search).get('admin')==='1')setTab('admin');},[adminAllowed]);
-  useEffect(()=>{const eventByTab:Record<typeof tab,UsageEventType>={stats:'site_view',works:'works_view',patterns:'patterns_view',taoyuan:'taoyuan_view',news:'site_view',about:'site_view',admin:'admin_open'};recordUsage(eventByTab[tab],tab);},[tab,recordUsage]);
+  useEffect(()=>{const eventByTab:Record<typeof tab,UsageEventType>={stats:'site_view',works:'works_view',patterns:'patterns_view',taoyuan:'taoyuan_view',news:'site_view',tools:'site_view',about:'site_view',admin:'admin_open'};recordUsage(eventByTab[tab],tab);},[tab,recordUsage]);
   const scopeWorks=useMemo(()=>works.filter(w=>(edition==='全部'||w.edition===Number(edition))&&(subject==='全部'||w.subject===subject)),[edition,subject]);
   const distribution=useMemo(()=>Object.entries(scopeWorks.reduce<Record<string,number>>((a,w)=>{a[w.phenomenon]=(a[w.phenomenon]||0)+1;return a},{})).sort((a,b)=>b[1]-a[1]),[scopeWorks]);
   let running=0; const chartTotal=scopeWorks.length||1; const gradient=distribution.map(([name,count])=>{const start=running/chartTotal*100;running+=count;return `${colors[name]} ${start}% ${running/chartTotal*100}%`}).join(',');
@@ -225,6 +228,7 @@ export default function Home() {
   const queryIsTaoyuan=['桃園','桃園市','桃園縣'].includes(normalizedQuery);
   const filtered=works.filter(w=>{const hay=[w.title,w.subject,w.award,w.school,w.location||'',w.phenomenon,w.structure,...w.keywords].join(' ').toLowerCase();const matchesQuery=queryIsTaoyuan?w.location==='桃園市':hay.includes(normalizedQuery);return(edition==='全部'||w.edition===Number(edition))&&(subject==='全部'||w.subject===subject)&&(phenomenon==='全部'||w.phenomenon===phenomenon)&&matchesQuery}).sort((a,b)=>a.edition-b.edition||a.subject.localeCompare(b.subject,'zh-Hant')||a.award.localeCompare(b.award,'zh-Hant'));
   const filteredNews=scienceNews.filter(item=>(newsRegion==='全部'||item.region===newsRegion)&&(newsTopic==='全部'||item.topic===newsTopic));
+  const filteredTools=scienceTools.filter(item=>toolGroup==='全部'||item.group===toolGroup);
   useEffect(()=>{if(tab!=='works')return;const normalizedQuery=query.trim().toLowerCase();const hasSearch=Boolean(normalizedQuery)||edition!=='全部'||subject!=='全部'||phenomenon!=='全部';if(!hasSearch)return;const timer=window.setTimeout(()=>{const knownKeyword=normalizedQuery?works.flatMap(work=>work.keywords).find(keyword=>keyword.toLowerCase()===normalizedQuery)||'':'';const resultBucket=filtered.length===0?'0':filtered.length<=5?'1_5':filtered.length<=20?'6_20':'21_plus';trackFirebaseEvent('works_search',{subject:subject==='全部'?'all':subject,edition:edition==='全部'?0:Number(edition),phenomenon:phenomenon==='全部'?'all':phenomenon,query_mode:normalizedQuery?(knownKeyword?'curated':'free_text'):'filters_only',known_keyword:knownKeyword||'none',result_bucket:resultBucket});},650);return()=>window.clearTimeout(timer);},[tab,query,edition,subject,phenomenon,filtered.length]);
   const editionCounts=[...new Set(works.map(work=>work.edition))].sort((a,b)=>a-b).map(edition=>({edition,count:works.filter(work=>work.edition===edition).length}));
   const subjectOptions=[...new Set(works.map(work=>work.subject))].sort((a,b)=>a.localeCompare(b,'zh-Hant'));
@@ -256,7 +260,7 @@ export default function Home() {
   const subjectGradient=subjectDistribution.map(([name,count])=>{const start=phenomenonRunning/phenomenonWorks.length*100;phenomenonRunning+=count;return `${colors[name]} ${start}% ${phenomenonRunning/phenomenonWorks.length*100}%`}).join(',');
   const openPhenomenon=(name:string)=>{trackFirebaseEvent('phenomenon_open',{subject:statsSubject,phenomenon:name});setSubject(statsSubject);setPhenomenon(name);setEdition('全部');setQuery('');setTab('works')};
   const openSubjectAnalysis=()=>{const targetEdition=statsSubject==='生物科'?65:60;trackFirebaseEvent('research_case_open',{subject:statsSubject,edition:targetEdition,source:'stats'});setAnalysisEdition(targetEdition);setAnalysisSubject(statsSubject);setSelectedCase(detailedWorks.find(w=>w.subject===statsSubject&&w.edition===targetEdition)?.id||'');setTab('patterns')};
-  const navigationTabs:Array<[typeof tab,string]>=[['stats','統計首頁'],['works','作品查詢'],['patterns','研究架構'],['taoyuan','桃園十年表現'],['news','科學新訊'],['about','資料說明']];
+  const navigationTabs:Array<[typeof tab,string]>=[['stats','統計首頁'],['works','作品查詢'],['patterns','研究架構'],['taoyuan','桃園十年表現'],['news','科學新訊'],['tools','科展工具箱'],['about','資料說明']];
   if(adminAllowed)navigationTabs.push(['admin','內容後台']);
   return <main>
     <header className="topbar"><div><span className="brand">科展脈絡</span><small>全國國中科展研究分析</small></div><nav className="tabs" aria-label="主要分頁">{navigationTabs.map(([id,label])=><button key={id} className={tab===id?'active':''} onClick={()=>setTab(id)}>{label}</button>)}</nav></header>
@@ -289,6 +293,8 @@ export default function Home() {
     </section>}
 
     {tab==='news'&&<section className="page news-page"><div className="news-intro"><p className="eyebrow">Curated science reading</p><h1>科展科學新訊</h1><p>精選可公開閱讀的國內外科展資源、期刊導讀與重要科學時事；每一則都附上原始來源與一個可轉化為探究設計的帶讀問題。</p><div className="news-status"><i/><span>最後查核：{scienceNewsCheckedAt}・並非即時自動新聞流，開啟原文可確認後續更新。</span></div></div><aside className="news-method"><div><b>怎麼用這一頁？</b><p>先以主題篩選，再讀「科展延伸」；它不是現成題目，而是協助把時事縮小成可量測、可比較、可討論限制的問題。</p></div><span>所有摘要均連回公開原始來源，外部內容與發布日期以來源網站為準。</span></aside><div className="news-toolbar"><div className="news-filter-group"><span>範圍</span>{scienceNewsRegions.map(region=><button key={region} className={newsRegion===region?'active':''} onClick={()=>setNewsRegion(region)}>{region}</button>)}</div><div className="news-filter-group"><span>主題</span>{scienceNewsTopics.map(topic=><button key={topic} className={newsTopic===topic?'active':''} onClick={()=>setNewsTopic(topic)}>{topic}</button>)}</div><p className="news-count">顯示 {filteredNews.length} 則精選閱讀</p></div><div className="news-grid">{filteredNews.map(item=><article className="news-card" key={item.id}><div className="news-card-head"><div className="news-card-tags"><span>{item.region}</span><span>{item.category}</span><span>{item.topic}</span></div><time>{item.date}</time></div><h2>{item.title}</h2><p>{item.summary}</p><div className="news-prompt"><b>科展延伸</b><p>{item.fairPrompt}</p></div><a className="news-source" href={item.url} target="_blank" rel="noreferrer"><small>{item.source}</small><span>閱讀原文 ↗</span></a></article>)}</div>{filteredNews.length===0&&<p className="note">此條件目前沒有精選內容；可切回「全部」查看完整閱讀清單。</p>}</section>}
+
+    {tab==='tools'&&<section className="page tools-page"><div className="tools-intro"><div><p className="eyebrow">Tools for inquiry</p><h1>科展工具箱</h1><p>依研究問題挑選量測、影像、資料分析、感測與野外資料工具。每項工具均附官方來源、可產出資料、建議流程與研究設計提醒；工具能幫忙蒐集與整理證據，但不能替代對照、重複與合理解釋。</p><div className="news-status"><i/><span>最後查核：{scienceToolsCheckedAt}・價格、裝置相容性與服務條款請以原始網站為準。</span></div></div><aside className="tools-stat"><strong>{scienceTools.length}</strong><span>項常用工具<br/>從「要量什麼」開始選，而不是先選 App。</span></aside></div><div className="tool-selector"><article><b>01 定義可觀察量</b><span>想量位置、聲音、面積、溫度、物種，還是空間分布？</span></article><article><b>02 先做小型試跑</b><span>確認量程、取樣頻率、照片尺度與資料欄位都可用。</span></article><article><b>03 建立對照與重複</b><span>同一工具要在相同條件下測量，才有比較基礎。</span></article><article><b>04 保留原始證據</b><span>保存原始檔、校正紀錄、程式與資料處理步驟。</span></article></div><div className="tools-toolbar"><div className="tools-filter">{scienceToolGroups.map(group=><button key={group} className={toolGroup===group?'active':''} onClick={()=>setToolGroup(group)}>{group}</button>)}</div><p className="tools-count">顯示 {filteredTools.length} 項工具</p></div><div className="tools-grid">{filteredTools.map(item=><article className="tool-card" key={item.id}><div className="tool-card-head"><p className="tool-group">{item.group}</p><span className="tool-level">{item.level}</span></div><h2>{item.name}</h2><p className="tool-provider">{item.provider}</p><div className="tool-meta"><span>{item.access}</span><span>{item.setup}</span></div><p>{item.summary}</p><div className="tool-facts"><div><b>適合處理</b><span>{item.bestFor}</span></div><div><b>可得到</b><span>{item.output}</span></div></div><ol className="tool-steps">{item.workflow.map(step=><li key={step}>{step}</li>)}</ol><div className="tool-caution"><b>研究提醒　</b>{item.caution}</div><a className="tool-source" href={item.url} target="_blank" rel="noreferrer"><span>{item.provider}</span><span>官方工具／說明 ↗</span></a></article>)}</div></section>}
 
     {tab==='about'&&<section className="page"><div className="page-heading"><div><p className="eyebrow">About the data</p><h1>資料範圍與判讀</h1></div></div><div className="about-grid"><article><h2>目前收錄</h2><p>本站目前有 {works.length} 件作品。第55–59屆收錄官方國中組名冊中所有有獎項標示的 {historicAwardCount} 件作品；第60–65屆保留既有四科自然科前三名 104 件，第66屆保留地球科學前三名 4 件。</p></article><article><h2>三種證據層級</h2><p><b>題名架構導引</b>依官方得獎題名整理研究設計線索；<b>官方全文索引</b>以 PDF 正文建立摘要、章節與方法訊號查核；<b>人工全文分析</b>再深入拆解研究問題、變因、量測、證據鏈與限制。題名導引不把題名推論成全文結論。</p></article><article><h2>本次更新：第55–59屆</h2><p>五屆官方名冊已逐筆保留科別、題名、學校、獎項與可回溯名冊連結：第55屆 71 件、第56屆 72 件、第57屆 76 件、第58屆 81 件、第59屆 78 件。數學與生活與應用科學也已納入研究架構頁；各作品先以分科導引呈現問題、證據與教師提問，全文分析會在後續批次加入。</p></article><article><h2>資料來源與統計口徑</h2><p>第55–59屆只計入官方國中組名冊中「名次」欄有內容的作品，包含第一至三名、佳作、團隊合作、探究精神、創意與鄉土教材等大會獎；名次空白的參展作品不計入。各屆獎項制度可能不同，因此適合觀察題目與架構趨勢，不宜直接當作跨屆競爭強度排名。</p></article><article className="designer-card"><h2>網頁設計</h2><p><b>廖俊傑</b><br/>桃園市自然輔導團兼任輔導員<br/><a href="mailto:ntujj@ms.tyc.edu.tw">ntujj@ms.tyc.edu.tw</a></p></article></div></section>}
     {tab==='admin'&&<ContentAdmin sourceWorks={works} onPublishedChanged={refreshPublishedContent}/>}
