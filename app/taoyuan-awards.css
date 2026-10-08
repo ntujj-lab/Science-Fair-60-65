@@ -616,6 +616,11 @@
   box-shadow: inset 4px 0 0 #c9632d;
 }
 
+.taoyuan-decade.is-archive {
+  border-color: #cbd4e1;
+  box-shadow: inset 4px 0 0 #56769b;
+}
+
 .decade-heading {
   display: flex;
   align-items: flex-start;
@@ -727,6 +732,26 @@
 
 .decade-year-list .award-detail-tags span small {
   flex-basis: 100%;
+}
+
+.decade-year-list > article.archive-gap {
+  border-style: dashed;
+  background: #f4f5f7;
+}
+
+.award-bar.is-unavailable {
+  background: repeating-linear-gradient(135deg, #dce1e7 0 7px, #eef0f3 7px 14px);
+}
+
+.year-data-note {
+  grid-column: 1 / -1;
+  margin: 0;
+  padding: 8px 10px;
+  border-left: 3px solid #718aa7;
+  background: #edf2f7;
+  color: #526475;
+  font-size: 11px;
+  line-height: 1.55;
 }
 
 @media (max-width: 720px) {

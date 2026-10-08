@@ -1,0 +1,158 @@
+{
+  "scope": "第37–46屆官方國中組資料。第39–46屆由完整官方名冊逐件統計；第38屆以官方優勝作品說明書確認；第37屆數位優勝作品專輯未列學校及名次，保留為待補檔案而不納入量化統計。",
+  "years": [
+    {
+      "edition": 37,
+      "entries": null,
+      "awards": 0,
+      "first": 0,
+      "second": 0,
+      "third": 0,
+      "merit": 0,
+      "other": 0,
+      "countInSummary": false,
+      "dataNote": "官方數位優勝作品專輯僅列題名，未列學校與名次；待取得可核對的原始名冊後再納入統計。",
+      "source": "https://twsf.ntsec.gov.tw/activity/race-1/37/37m.htm",
+      "awardDetails": []
+    },
+    {
+      "edition": 38,
+      "entries": null,
+      "awards": 1,
+      "first": 0,
+      "second": 1,
+      "third": 0,
+      "merit": 0,
+      "other": 0,
+      "dataNote": "官方優勝作品說明書可確認得獎作品與名次；該屆完整桃園參展件數未載於數位優勝作品專輯，故不計入獲獎率分母。",
+      "source": "https://twsf.ntsec.gov.tw/activity/race-1/38/38m.htm",
+      "awardDetails": [
+        { "subject": "地球科學科", "rank": "第二名", "school": "桃園縣立文昌國民中學", "title": "桃園人的噩夢－酸雨" }
+      ]
+    },
+    {
+      "edition": 39,
+      "entries": 2,
+      "awards": 2,
+      "first": 0,
+      "second": 1,
+      "third": 0,
+      "merit": 1,
+      "other": 0,
+      "source": "https://twsf.ntsec.gov.tw/activity/race-1/39/high.html",
+      "awardDetails": [
+        { "subject": "物理科", "rank": "第二名", "school": "桃園市立石門國民中學", "title": "落葉飄飄何所似" },
+        { "subject": "生物科", "rank": "佳作", "school": "桃園市立石門國民中學", "title": "荀干奇兵" }
+      ]
+    },
+    {
+      "edition": 40,
+      "entries": 1,
+      "awards": 1,
+      "first": 0,
+      "second": 0,
+      "third": 0,
+      "merit": 1,
+      "other": 0,
+      "source": "https://twsf.ntsec.gov.tw/activity/race-1/40/high.html",
+      "awardDetails": [
+        { "subject": "物理科", "rank": "佳作", "school": "桃園市立內壢國民中學", "title": "來自旋轉的樂章" }
+      ]
+    },
+    {
+      "edition": 41,
+      "entries": 1,
+      "awards": 1,
+      "first": 1,
+      "second": 0,
+      "third": 0,
+      "merit": 0,
+      "other": 0,
+      "source": "https://twsf.ntsec.gov.tw/activity/race-1/41/high.html",
+      "awardDetails": [
+        { "subject": "應用科學科", "rank": "第一名", "school": "桃園市立永豐高級中等學校", "title": "三分鐘真能護一生嗎？～水中三鹵甲烷暴露量之探討～" }
+      ]
+    },
+    {
+      "edition": 42,
+      "entries": 8,
+      "awards": 4,
+      "first": 0,
+      "second": 0,
+      "third": 1,
+      "merit": 2,
+      "other": 1,
+      "source": "https://twsf.ntsec.gov.tw/activity/race-1/42/high.html",
+      "awardDetails": [
+        { "subject": "物理科", "rank": "最佳團隊合作獎", "school": "桃園市立竹圍國民中學", "title": "會唱歌的空氣" },
+        { "subject": "化學科", "rank": "第三名 最佳(鄉土)教材獎", "school": "桃園市立凌雲國民中學", "title": "皂化弄人？人定勝天！" },
+        { "subject": "生物(生命科學)科", "rank": "佳作", "school": "桃園市立大成國民中學", "title": "水中的F117－大肚魚" },
+        { "subject": "生活與應用科學科", "rank": "佳作", "school": "桃園市立富岡國民中學", "title": "油來油去油成愁" }
+      ]
+    },
+    {
+      "edition": 43,
+      "entries": 2,
+      "awards": 2,
+      "first": 0,
+      "second": 0,
+      "third": 0,
+      "merit": 1,
+      "other": 1,
+      "source": "https://twsf.ntsec.gov.tw/activity/race-1/43/high.html",
+      "awardDetails": [
+        { "subject": "物理科", "rank": "最佳團隊合作獎", "school": "桃園市立凌雲國民中學", "title": "歐姆～這真是太神奇了！－探討電子在導線中運動的情形" },
+        { "subject": "化學科", "rank": "佳作", "school": "桃園市立福豐國民中學", "title": "小小晶球真奇妙" }
+      ]
+    },
+    {
+      "edition": 44,
+      "entries": 6,
+      "awards": 6,
+      "first": 0,
+      "second": 0,
+      "third": 1,
+      "merit": 1,
+      "other": 4,
+      "source": "https://twsf.ntsec.gov.tw/activity/race-1/44/high.html",
+      "awardDetails": [
+        { "subject": "物理科", "rank": "第三名", "school": "桃園市立觀音國民中學", "title": "披沙揀金－如何有效分離大小顆粒" },
+        { "subject": "化學科", "rank": "佳作", "school": "桃園市立龍潭國民中學", "title": "流離燈" },
+        { "subject": "化學科", "rank": "最佳(鄉土)教材獎", "school": "桃園市私立六和高級中學(附設國中)", "title": "神奇的魔法碳－各種碳的性能探討" },
+        { "subject": "生物科", "rank": "最佳創意獎", "school": "桃園市立觀音國民中學", "title": "飛機草上的寶石－花金龜生態之初探" },
+        { "subject": "數學科", "rank": "最佳(鄉土)教材獎", "school": "桃園市立光明國民中學", "title": "一池水知多少？辛普森法則之運用" },
+        { "subject": "生活與應用科學科", "rank": "最佳(鄉土)教材獎", "school": "桃園市立平南國民中學", "title": "創意、改造大發明" }
+      ]
+    },
+    {
+      "edition": 45,
+      "entries": 8,
+      "awards": 3,
+      "first": 0,
+      "second": 0,
+      "third": 0,
+      "merit": 3,
+      "other": 0,
+      "source": "https://twsf.ntsec.gov.tw/activity/race-1/45/high.html",
+      "awardDetails": [
+        { "subject": "理化科", "rank": "佳作", "school": "桃園縣立觀音國民中學", "title": "風生電起—探討風能的有效應用" },
+        { "subject": "數學科", "rank": "佳作", "school": "桃園縣立內壢國民中學", "title": "層出不窮?!" },
+        { "subject": "生活與應用科學科", "rank": "佳作", "school": "桃園縣私立六和高級中學(附設國中)", "title": "空氣維他命（負離子）與電磁波之探討" }
+      ]
+    },
+    {
+      "edition": 46,
+      "entries": 7,
+      "awards": 1,
+      "first": 0,
+      "second": 0,
+      "third": 0,
+      "merit": 0,
+      "other": 1,
+      "source": "https://twsf.ntsec.gov.tw/activity/race-1/46/high.html",
+      "awardDetails": [
+        { "subject": "數學科", "rank": "最佳(鄉土)教材獎", "school": "桃園縣縣立幸福國民中學", "title": "截彎取直" }
+      ]
+    }
+  ]
+}
