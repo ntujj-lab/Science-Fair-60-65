@@ -1,0 +1,179 @@
+{
+  "scope": "第47–56屆官方國中組名冊；以學校名稱含桃園縣／市判定。各屆資料依原始名冊的科別設計保留。",
+  "years": [
+    {
+      "edition": 47,
+      "entries": 8,
+      "awards": 4,
+      "first": 0,
+      "second": 0,
+      "third": 1,
+      "merit": 2,
+      "other": 1,
+      "source": "https://twsf.ntsec.gov.tw/activity/race-1/47/high.html",
+      "awardDetails": [
+        { "subject": "理化科", "rank": "佳作 最佳(鄉土)教材獎", "school": "桃園縣私立六和高級中學(附設國中)", "title": "紅葉小巨人" },
+        { "subject": "生物及地球科學科", "rank": "第三名", "school": "桃園縣立新屋國民中學", "title": "空氣\"霧\"染" },
+        { "subject": "數學科", "rank": "最佳(鄉土)教材獎", "school": "桃園縣立桃園國民中學", "title": "正多邊形母子面積比" },
+        { "subject": "生活與應用科學科", "rank": "佳作", "school": "桃園縣立永安國民中學", "title": "醇醇欲動─乙醇燃料動力車之設計與探討" }
+      ]
+    },
+    {
+      "edition": 48,
+      "entries": 9,
+      "awards": 6,
+      "first": 0,
+      "second": 0,
+      "third": 1,
+      "merit": 3,
+      "other": 2,
+      "source": "https://twsf.ntsec.gov.tw/activity/race-1/48/high.html",
+      "awardDetails": [
+        { "subject": "理化科", "rank": "第三名", "school": "桃園縣立內壢國民中學", "title": "「如膠似漆乎」－液體的黏滯性之研究" },
+        { "subject": "理化科", "rank": "佳 作", "school": "桃園縣立建國國民中學", "title": "大有「旋機」—透過旋轉式機制重新探討機翼升力" },
+        { "subject": "理化科", "rank": "最佳團隊合作獎", "school": "桃園縣立新明國民中學", "title": "發鹽橋語 誰來放電？---探討以金屬代替鋅銅電池鹽橋的反應" },
+        { "subject": "生物及地球科學科", "rank": "佳 作", "school": "桃園縣立永豐高級中學(附設國中)", "title": "有鰓乃大-魚鰓構造、表面積計算與鰓蓋運動之觀察" },
+        { "subject": "數學科", "rank": "最佳創意獎", "school": "桃園縣私立新興高級中學", "title": "條條矩矩法-探討級數的奧妙" },
+        { "subject": "生活與應用科學科", "rank": "佳 作", "school": "桃園縣立內壢國民中學", "title": "「驚濤駭“電”！」－波浪發電之研究" }
+      ]
+    },
+    {
+      "edition": 49,
+      "entries": 9,
+      "awards": 5,
+      "first": 0,
+      "second": 1,
+      "third": 1,
+      "merit": 2,
+      "other": 1,
+      "source": "https://twsf.ntsec.gov.tw/activity/race-1/49/high.html",
+      "awardDetails": [
+        { "subject": "物理科", "rank": "第三名", "school": "桃園縣私立六和高級中學(附設國中)", "title": "綠豆湯的奧秘---糖水、食鹽水的終極密碼" },
+        { "subject": "化學科", "rank": "第二名", "school": "桃園縣立慈文國民中學", "title": "「晶」益求精-探討不同聲波、溫度、濃度、離子等對其影響" },
+        { "subject": "生物科", "rank": "佳作", "school": "桃園縣私立新興高級中學(附設國中)", "title": "毒他--隱藏的戰爭" },
+        { "subject": "生物科", "rank": "最佳創意獎", "school": "桃園縣立龜山國民中學", "title": "蘿蔓A菜的結痂" },
+        { "subject": "生活與應用科學科", "rank": "佳作", "school": "桃園縣立壽山國民中學", "title": "聲音發電" }
+      ]
+    },
+    {
+      "edition": 50,
+      "entries": 9,
+      "awards": 5,
+      "first": 1,
+      "second": 0,
+      "third": 2,
+      "merit": 1,
+      "other": 1,
+      "source": "https://twsf.ntsec.gov.tw/activity/race-1/50/high.html",
+      "awardDetails": [
+        { "subject": "化學科", "rank": "佳作", "school": "桃園縣立中壢國民中學", "title": "搖滾的秘密-讓音樂進入電的世界" },
+        { "subject": "化學科", "rank": "第三名", "school": "桃園縣立桃園國民中學", "title": "花飛蝶舞－探討蝴蝶拍翅渦流與升力之關係" },
+        { "subject": "生物科", "rank": "第一名", "school": "桃園縣立新屋國民中學", "title": "「無生」勝「有生」－北臺灣全年無休的睡蓮葉片繁殖法" },
+        { "subject": "數學科", "rank": "最佳(鄉土)教材獎", "school": "桃園縣立中興國民中學", "title": "實現高中職社區化───探討凸多邊形的最佳位置" },
+        { "subject": "生活與應用科學科", "rank": "第三名", "school": "桃園縣私立新興高級中學(附設國中)", "title": "殺菌大對決~如何確保食用生魚片的安全" }
+      ]
+    },
+    {
+      "edition": 51,
+      "entries": 8,
+      "awards": 3,
+      "first": 0,
+      "second": 1,
+      "third": 0,
+      "merit": 1,
+      "other": 1,
+      "source": "https://twsf.ntsec.gov.tw/activity/race-1/51/high.html",
+      "awardDetails": [
+        { "subject": "物理科", "rank": "佳作", "school": "桃園縣立新明國民中學", "title": "第四個傻瓜----電影「Three idiots」中尿液觸電之真偽" },
+        { "subject": "數學科", "rank": "最佳(鄉土)教材獎", "school": "桃園縣立大溪國民中學", "title": "Golden House……Perhaps!" },
+        { "subject": "地球科學科", "rank": "第二名", "school": "桃園縣立光明國民中學", "title": "南崁溪污染對河川沉積物的影響" }
+      ]
+    },
+    {
+      "edition": 52,
+      "entries": 8,
+      "awards": 5,
+      "first": 0,
+      "second": 0,
+      "third": 2,
+      "merit": 3,
+      "other": 0,
+      "source": "https://twsf.ntsec.gov.tw/activity/race-1/52/index.htm",
+      "awardDetails": [
+        { "subject": "生物科", "rank": "第三名 最佳創意獎", "school": "桃園縣私立新興高級中學(附設國中)", "title": "「蓮」香「螅癒」" },
+        { "subject": "數學科", "rank": "第三名", "school": "桃園縣私立新興高級中學(附設國中)", "title": "任意矩形的三階多米諾骨牌填圖謎題" },
+        { "subject": "數學科", "rank": "佳作", "school": "桃園縣立建國國民中學", "title": "驚爆摩天輪" },
+        { "subject": "地球科學科", "rank": "佳作", "school": "桃園縣立楊光國民中(小)學", "title": "土角厝的奧秘" },
+        { "subject": "生活與應用科學科", "rank": "佳作", "school": "桃園縣私立六和高級中學(附設國中)", "title": "風言風語" }
+      ]
+    },
+    {
+      "edition": 53,
+      "entries": 12,
+      "awards": 7,
+      "first": 1,
+      "second": 1,
+      "third": 3,
+      "merit": 0,
+      "other": 2,
+      "source": "https://twsf.ntsec.gov.tw/activity/race-1/53/index.htm",
+      "awardDetails": [
+        { "subject": "化學科", "rank": "最佳團隊合作獎", "school": "桃園縣立大坡國民中學", "title": "黑白變-變色薄膜研究" },
+        { "subject": "生物科", "rank": "最佳團隊合作獎", "school": "桃園縣立楊光國民中(小)學", "title": "好「蚌」！石蚌之研究" },
+        { "subject": "生物科", "rank": "第三名", "school": "桃園縣立經國國民中學", "title": "天造地設-探討黃槿刺子節蜱的造癭秘密" },
+        { "subject": "數學科", "rank": "第一名", "school": "桃園縣私立新興高級中學(附設國中)", "title": "潘朵拉的正鑲嵌圖塗色秘密" },
+        { "subject": "地球科學科", "rank": "第三名", "school": "桃園縣立楊光國民中(小)學", "title": "坍與不坍-崩塌地之土粒研究" },
+        { "subject": "地球科學科", "rank": "第三名", "school": "桃園縣私立六和高級中學(附設國中)", "title": "小男孩別來亂-聖嬰來了!" },
+        { "subject": "生活與應用科學科", "rank": "第二名", "school": "桃園縣立楊光國民中(小)學", "title": "省錢！再省錢！螺旋燈管散熱之研究" }
+      ]
+    },
+    {
+      "edition": 54,
+      "entries": 10,
+      "awards": 4,
+      "first": 0,
+      "second": 0,
+      "third": 2,
+      "merit": 2,
+      "other": 0,
+      "source": "https://twsf.ntsec.gov.tw/activity/race-1/54/high.htm",
+      "awardDetails": [
+        { "subject": "物理科", "rank": "佳作", "school": "桃園縣立中壢國民中學", "title": "省電與照度的平衡－日光燈具的三維照度之實驗" },
+        { "subject": "化學科", "rank": "佳作", "school": "桃園縣立大成國民中學", "title": "隨「晶」所欲，從「核」開始" },
+        { "subject": "生物科", "rank": "第三名", "school": "桃園縣私立新興高級中學(附設國中)", "title": "菇Go！非「光」不可" },
+        { "subject": "生物科", "rank": "第三名", "school": "桃園縣立經國國民中學", "title": "「絲」相授「綬」－探討綬草與絲核菌共生的秘密" }
+      ]
+    },
+    {
+      "edition": 55,
+      "entries": 9,
+      "awards": 1,
+      "first": 0,
+      "second": 0,
+      "third": 0,
+      "merit": 1,
+      "other": 0,
+      "source": "https://twsf.ntsec.gov.tw/activity/race-1/55/high.htm",
+      "awardDetails": [
+        { "subject": "生物科", "rank": "佳作", "school": "桃園市私立新興高級中學(附設國中)", "title": "光 的「膜」術師" }
+      ]
+    },
+    {
+      "edition": 56,
+      "entries": 14,
+      "awards": 4,
+      "first": 0,
+      "second": 0,
+      "third": 1,
+      "merit": 2,
+      "other": 1,
+      "source": "https://twsf.ntsec.gov.tw/activity/race-1/56/high.html",
+      "awardDetails": [
+        { "subject": "數學科", "rank": "最佳團隊合作獎", "school": "桃園市私立新興高級中學(附設國中)", "title": "多方塊組成之深入探討與研究" },
+        { "subject": "數學科", "rank": "第三名", "school": "桃園市立中壢國民中學", "title": "倒立吧!河內塔!" },
+        { "subject": "數學科", "rank": "佳作", "school": "桃園市立瑞坪國民中學", "title": "孟氏定理之角元形式及其逆定理在凸多邊形之探討及其應用" },
+        { "subject": "地球科學科", "rank": "佳作", "school": "桃園市立桃園國民中學", "title": "煙煙一息~探討大氣穩定度與煙流及PM2.5擴散之關係" }
+      ]
+    }
+  ]
+}

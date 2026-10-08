@@ -589,3 +589,158 @@
     width: min(100% - 24px, 1180px);
   }
 }
+
+/* 桃園二十年頁面：依近到遠排列兩個完整十年，原本的單一十年格狀區塊不再重複顯示。 */
+.taoyuan-page > .taoyuan-grid {
+  display: none;
+}
+
+.taoyuan-periods {
+  display: grid;
+  gap: 18px;
+  margin-top: 18px;
+}
+
+.taoyuan-decade {
+  min-height: 0;
+  overflow: hidden;
+}
+
+.taoyuan-decade.is-recent {
+  border-color: #b9cabc;
+  box-shadow: inset 4px 0 0 #4f8875;
+}
+
+.taoyuan-decade.is-legacy {
+  border-color: #e2d5ba;
+  box-shadow: inset 4px 0 0 #c9632d;
+}
+
+.decade-heading {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 18px;
+}
+
+.decade-heading h2 {
+  margin: 0;
+  font-family: 'Noto Serif TC', serif;
+  font-size: clamp(22px, 3vw, 30px);
+}
+
+.decade-heading p:not(.eyebrow) {
+  max-width: 700px;
+  margin: 9px 0 0;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+.decade-order {
+  flex: 0 0 auto;
+  padding: 7px 10px;
+  border: 1px solid #d9d2c2;
+  border-radius: 999px;
+  background: #f7f3e9;
+  color: var(--green);
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.decade-metrics {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 8px;
+  margin: 18px 0 14px;
+}
+
+.decade-metrics span {
+  display: grid;
+  gap: 3px;
+  padding: 10px 11px;
+  border: 1px solid #e4ded0;
+  border-radius: 10px;
+  background: rgba(247, 243, 233, .7);
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.45;
+}
+
+.decade-metrics b {
+  color: var(--orange);
+  font-family: 'Noto Serif TC', serif;
+  font-size: 23px;
+  line-height: 1;
+}
+
+.decade-subjects {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 0 0 16px;
+  padding: 11px 12px;
+  border-radius: 10px;
+  background: #f3eee2;
+  font-size: 12px;
+}
+
+.decade-subjects > b {
+  flex: 0 0 auto;
+  color: var(--green);
+}
+
+.decade-subjects > div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.decade-subjects span {
+  padding: 3px 7px;
+  border: 1px solid #d9d0bf;
+  border-radius: 999px;
+  background: #fffdf7;
+}
+
+.decade-subjects em {
+  margin-left: 3px;
+  color: var(--orange);
+  font-style: normal;
+  font-weight: 800;
+}
+
+.decade-year-list .award-detail-tags small {
+  display: block;
+  max-width: 360px;
+  margin-top: 2px;
+  color: var(--muted);
+  font-size: 10px;
+  line-height: 1.45;
+}
+
+.decade-year-list .award-detail-tags span {
+  align-items: flex-start;
+  flex-wrap: wrap;
+  border-radius: 9px;
+}
+
+.decade-year-list .award-detail-tags span small {
+  flex-basis: 100%;
+}
+
+@media (max-width: 720px) {
+  .decade-heading {
+    flex-direction: column;
+  }
+
+  .decade-metrics {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .decade-subjects {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 7px;
+  }
+}
