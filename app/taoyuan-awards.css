@@ -769,3 +769,148 @@
     gap: 7px;
   }
 }
+
+.award-detail-link {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 5px;
+  padding: 5px 8px;
+  border: 1px solid #b8d0c7;
+  border-radius: 9px;
+  background: #f4fbf8;
+  color: var(--ink);
+  font: inherit;
+  line-height: 1.35;
+  text-align: left;
+  cursor: pointer;
+}
+
+.award-detail-link:hover,
+.award-detail-link:focus-visible {
+  border-color: var(--green);
+  background: #e7f3ee;
+  outline: none;
+}
+
+.award-detail-link small {
+  flex-basis: 100%;
+  max-width: 360px;
+  margin-top: 2px;
+  color: var(--green) !important;
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 1.45;
+}
+
+.taoyuan-level-tabs {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+  margin: 22px 0;
+}
+
+.taoyuan-level-tabs a {
+  display: grid;
+  gap: 3px;
+  padding: 13px 15px;
+  border: 1px solid #cbd9d2;
+  border-radius: 12px;
+  background: #f8fbf8;
+  color: var(--green);
+  font-size: 15px;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.taoyuan-level-tabs a:hover {
+  border-color: var(--green);
+  background: #eef7f2;
+}
+
+.taoyuan-level-tabs span {
+  color: var(--muted);
+  font-size: 11px;
+  font-weight: 500;
+}
+
+.taoyuan-school-groups {
+  display: grid;
+  gap: 42px;
+}
+
+.taoyuan-school-group {
+  scroll-margin-top: 20px;
+}
+
+.taoyuan-group-heading {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 18px;
+  padding: 0 2px 15px;
+  border-bottom: 2px solid #d8e2dd;
+}
+
+.taoyuan-group-heading h2 {
+  margin: 0;
+  font-family: 'Noto Serif TC', serif;
+  font-size: clamp(24px, 3.2vw, 34px);
+}
+
+.taoyuan-group-heading p:not(.eyebrow) {
+  max-width: 740px;
+  margin: 8px 0 0;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+.taoyuan-method {
+  margin-top: 34px;
+}
+
+.taoyuan-method h2 {
+  margin: 3px 0 10px;
+}
+
+.taoyuan-method ul {
+  display: grid;
+  gap: 8px;
+  margin: 0;
+  padding-left: 20px;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.75;
+}
+
+.load-more {
+  display: block;
+  width: min(100%, 420px);
+  margin: 20px auto 0;
+  padding: 11px 16px;
+  border: 1px solid #b8d0c7;
+  border-radius: 9px;
+  background: #f4fbf8;
+  color: var(--green);
+  font: inherit;
+  font-size: 13px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.load-more:hover {
+  border-color: var(--green);
+  background: #e7f3ee;
+}
+
+@media (max-width: 720px) {
+  .taoyuan-level-tabs {
+    grid-template-columns: 1fr;
+  }
+
+  .taoyuan-group-heading {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
